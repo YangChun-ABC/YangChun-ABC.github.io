@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>村长ABC</title>
+  
+  <subtitle>孤独、是一种态度</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://blon.club/"/>
+  <updated>2019-07-18T15:41:49.473Z</updated>
+  <id>https://blon.club/</id>
+  
+  <author>
+    <name>村长ABC</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo Next博客搭建---修改底部标签样式</title>
+    <link href="https://blon.club/2019/07/18/Hexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E4%BF%AE%E6%94%B9%E5%BA%95%E9%83%A8%E6%A0%87%E7%AD%BE%E6%A0%B7%E5%BC%8F/"/>
+    <id>https://blon.club/2019/07/18/Hexo-Next博客搭建-修改底部标签样式/</id>
+    <published>2019-07-18T15:35:22.000Z</published>
+    <updated>2019-07-18T15:41:49.473Z</updated>
+    
+    <content type="html"><![CDATA[<p>修改底部标签样式</p><p>一、打开文件 <code>Blog\themes\next\layout\_macro\post.swig</code>ctrl + f 查找 <code>rel=&quot;tag&quot;&gt;#</code>，如果没有就查找 <code>#</code> 然后替换成<code>&lt;i class=&quot;fa fa-tag&quot;&gt;&lt;/i&gt;</code> 然后重建缓存，调试查看效果</p><p><img src="https://i.loli.net/2019/07/19/5d30a17c069e916380.png" alt="5d30a17c069e916380"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;修改底部标签样式&lt;/p&gt;
+&lt;p&gt;一、打开文件 &lt;code&gt;Blog\themes\next\layout\_macro\post.swig&lt;/code&gt;ctrl + f 查找 &lt;code&gt;rel=&amp;quot;tag&amp;quot;&amp;gt;#&lt;/code&gt;，如果没有就查找 &lt;co
+      
+    
+    </summary>
+    
+      <category term="hexo" scheme="https://blon.club/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="https://blon.club/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo Next博客搭建---动态背景</title>
+    <link href="https://blon.club/2019/07/18/Hexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF/"/>
+    <id>https://blon.club/2019/07/18/Hexo-Next博客搭建-动态背景/</id>
+    <published>2019-07-18T15:05:25.000Z</published>
+    <updated>2019-07-18T15:10:14.678Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo Next博客搭建---撰写博客</title>
+    <link href="https://blon.club/2019/07/18/Hexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E2%80%94%E2%80%94%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF/"/>
+    <id>https://blon.club/2019/07/18/Hexo-Next博客搭建——动态背景/</id>
+    <published>2019-07-18T12:15:26.000Z</published>
+    <updated>2019-07-18T15:14:00.737Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h5><p>博客搭建完成后就是开始写博文了，在写博文之前需要给博文添加分类以及标签，这里说一下博主踩过的坑，最开始的时候，由于是小白，直接就那样写了，当时分类页和标签页都配置好了，但是分类和标签都是空的，what ???，怀疑人生都，最后问度娘才知道，原来是配置出错了。</p><p>进入博客根目录分别打开 Blog\source\categories\index.md 和 Blog\source\tags\index.md 分别往里面添加一行代码（红线部分）<img src="https://i.loli.net/2019/07/18/5d307724b289c71620.png" alt="5d307724b289c71620"></p><p><img src="https://i.loli.net/2019/07/18/5d307777160ae13155.png" alt="5d307777160ae13155"></p><p>然后就可以撰写博客了 以这种格式编写就可以了</p><p><img src="https://i.loli.net/2019/07/18/5d3081390402c59876.png" alt="5d3081390402c59876"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h5&gt;&lt;p&gt;博客搭建完成后就是开始写博文了，在写博文之前需要给博文添加分类以及标签，这里说一下博主踩过的坑，最开始的时候，由于是小白，直接就那样写了，当
+      
+    
+    </summary>
+    
+      <category term="hexo" scheme="https://blon.club/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="https://blon.club/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo Next博客搭建---文章结尾添加版权信息</title>
+    <link href="https://blon.club/2019/07/18/Hexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E6%96%87%E7%AB%A0%E7%BB%93%E5%B0%BE%E6%B7%BB%E5%8A%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/"/>
+    <id>https://blon.club/2019/07/18/Hexo-Next博客搭建-文章结尾添加版权信息/</id>
+    <published>2019-07-18T07:20:47.000Z</published>
+    <updated>2019-07-18T15:10:06.121Z</updated>
+    
+    <content type="html"><![CDATA[<p>在文章结尾处添加版权信息</p><h5 id="一、修改主题文件"><a href="#一、修改主题文件" class="headerlink" title="一、修改主题文件"></a>一、修改主题文件</h5><p>打开 <code>Blog\themes\next\_config.yml</code> 按ctrl + f 查找 <code>creative_commons:</code>将post的值改为<code>true</code></p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Creative Commons 4.0 International License.</span></span><br><span class="line"><span class="comment"># See: https://creativecommons.org/share-your-work/licensing-types-examples</span></span><br><span class="line"><span class="comment"># Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero</span></span><br><span class="line"><span class="comment"># You can set a language value if you prefer a translated version of CC license, e.g. deed.zh</span></span><br><span class="line"><span class="comment"># CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org</span></span><br><span class="line"><span class="comment">#版权信息</span></span><br><span class="line"><span class="attr">creative_commons:</span></span><br><span class="line"><span class="attr">  license:</span> <span class="string">by-nc-sa</span>   <span class="comment">#表示当前使用的协议，可以随意更改</span></span><br><span class="line"></span><br><span class="line"><span class="attr">  sidebar:</span> <span class="literal">false</span>      <span class="comment">#表示是否要显示在左侧边栏</span></span><br><span class="line"></span><br><span class="line"><span class="attr">  post:</span> <span class="literal">true</span>          <span class="comment">#表示是否在文章结尾处显示</span></span><br><span class="line"></span><br><span class="line"><span class="attr">  language:</span></span><br></pre></td></tr></table></figure><p>如果你觉得不够详细，可查看<a href="https://hexo-guide.readthedocs.io/zh_CN/latest/theme/[NexT]%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF.html" target="_blank" rel="noopener"> hexo指南 </a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;在文章结尾处添加版权信息&lt;/p&gt;
+&lt;h5 id=&quot;一、修改主题文件&quot;&gt;&lt;a href=&quot;#一、修改主题文件&quot; class=&quot;headerlink&quot; title=&quot;一、修改主题文件&quot;&gt;&lt;/a&gt;一、修改主题文件&lt;/h5&gt;&lt;p&gt;打开 &lt;code&gt;Blog\themes\next\
+      
+    
+    </summary>
+    
+      <category term="hexo" scheme="https://blon.club/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="https://blon.club/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo Next博客搭建---文章后面添加结束语</title>
+    <link href="https://blon.club/2019/07/18/Hexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E6%96%87%E7%AB%A0%E5%90%8E%E9%9D%A2%E6%B7%BB%E5%8A%A0%E7%BB%93%E6%9D%9F%E8%AF%AD/"/>
+    <id>https://blon.club/2019/07/18/Hexo-Next博客搭建-文章后面添加结束语/</id>
+    <published>2019-07-18T06:43:21.000Z</published>
+    <updated>2019-07-18T15:09:19.798Z</updated>
+    
+    <content type="html"><![CDATA[<p>文章后面添加结束标语</p><h5 id="一、新建文件"><a href="#一、新建文件" class="headerlink" title="一、新建文件"></a>一、新建文件</h5><p>在 <code>Blog\themes\next\layout\_macro</code> 下创建 <code>passage-end-tag.swig</code> 文件 ，打开该文件添加以下代码</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &#123;% <span class="keyword">if</span> not is_index %&#125;</span><br><span class="line">        &lt;div style=<span class="string">"text-align:center;color: #3c3c3c;font-size:15px;"</span>&gt;-------------本文结束&lt;i <span class="class"><span class="keyword">class</span></span>=<span class="string">"fa fa-paw"</span>&gt;&lt;/i&gt;感谢您的阅读-------------&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/如果想替换别的颜色可以更改 color： #后面的色值， font-size:15px 文字大小</span></span><br></pre></td></tr></table></figure><h5 id="二、修改-post-swig-文件"><a href="#二、修改-post-swig-文件" class="headerlink" title="二、修改 post.swig 文件"></a>二、修改 post.swig 文件</h5><p>打开Blog\themes\next\layout_macro\post.swig文件，在<code>post-body</code>后，<code>post-footer</code>前，添加以下代码 ，可能会找不到，博主这里是直接添加到第 354 行的位置</p><pre><code>&lt;div&gt;  {% if not is_index %}      {% include 'passage-end-tag.swig' %}      {% endif %}&lt;/div&gt;</code></pre><h5 id="三、最后修改主题配置文件"><a href="#三、最后修改主题配置文件" class="headerlink" title="三、最后修改主题配置文件"></a>三、最后修改主题配置文件</h5><p>打开 Blog\themes\next _config.yml 在末尾的地方添加如下代码</p><p>#文章末尾添加“本文结束”标记</p><p>  passage_end_tag:<br>    enabled: true</p><p>最后进入博客根目录，执行下面这条命令即可，小扩展：hexo clean 重建缓存，Hexo server –debug 调试</p><p>$ hexo clean &amp;&amp; Hexo server –debug</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;文章后面添加结束标语&lt;/p&gt;
+&lt;h5 id=&quot;一、新建文件&quot;&gt;&lt;a href=&quot;#一、新建文件&quot; class=&quot;headerlink&quot; title=&quot;一、新建文件&quot;&gt;&lt;/a&gt;一、新建文件&lt;/h5&gt;&lt;p&gt;在 &lt;code&gt;Blog\themes\next\layout\_mac
+      
+    
+    </summary>
+    
+      <category term="hexo" scheme="https://blon.club/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="https://blon.club/tags/hexo/"/>
+    
+  </entry>
+  
+</feed>

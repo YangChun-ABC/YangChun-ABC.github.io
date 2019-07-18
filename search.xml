@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hexo Next博客搭建---修改底部标签样式]]></title>
+    <url>%2F2019%2F07%2F18%2FHexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E4%BF%AE%E6%94%B9%E5%BA%95%E9%83%A8%E6%A0%87%E7%AD%BE%E6%A0%B7%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[修改底部标签样式 一、打开文件 Blog\themes\next\layout\_macro\post.swigctrl + f 查找 rel=&quot;tag&quot;&gt;#，如果没有就查找 # 然后替换成&lt;i class=&quot;fa fa-tag&quot;&gt;&lt;/i&gt; 然后重建缓存，调试查看效果]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo Next博客搭建---动态背景]]></title>
+    <url>%2F2019%2F07%2F18%2FHexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo Next博客搭建---撰写博客]]></title>
+    <url>%2F2019%2F07%2F18%2FHexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E2%80%94%E2%80%94%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF%2F</url>
+    <content type="text"><![CDATA[前言博客搭建完成后就是开始写博文了，在写博文之前需要给博文添加分类以及标签，这里说一下博主踩过的坑，最开始的时候，由于是小白，直接就那样写了，当时分类页和标签页都配置好了，但是分类和标签都是空的，what ???，怀疑人生都，最后问度娘才知道，原来是配置出错了。 进入博客根目录分别打开 Blog\source\categories\index.md 和 Blog\source\tags\index.md 分别往里面添加一行代码（红线部分） 然后就可以撰写博客了 以这种格式编写就可以了]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo Next博客搭建---文章结尾添加版权信息]]></title>
+    <url>%2F2019%2F07%2F18%2FHexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E6%96%87%E7%AB%A0%E7%BB%93%E5%B0%BE%E6%B7%BB%E5%8A%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF%2F</url>
+    <content type="text"><![CDATA[在文章结尾处添加版权信息 一、修改主题文件打开 Blog\themes\next\_config.yml 按ctrl + f 查找 creative_commons:将post的值改为true 1234567891011121314# Creative Commons 4.0 International License.# See: https://creativecommons.org/share-your-work/licensing-types-examples# Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero# You can set a language value if you prefer a translated version of CC license, e.g. deed.zh# CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org#版权信息creative_commons: license: by-nc-sa #表示当前使用的协议，可以随意更改 sidebar: false #表示是否要显示在左侧边栏 post: true #表示是否在文章结尾处显示 language: 如果你觉得不够详细，可查看 hexo指南]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo Next博客搭建---文章后面添加结束语]]></title>
+    <url>%2F2019%2F07%2F18%2FHexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E6%96%87%E7%AB%A0%E5%90%8E%E9%9D%A2%E6%B7%BB%E5%8A%A0%E7%BB%93%E6%9D%9F%E8%AF%AD%2F</url>
+    <content type="text"><![CDATA[文章后面添加结束标语 一、新建文件在 Blog\themes\next\layout\_macro 下创建 passage-end-tag.swig 文件 ，打开该文件添加以下代码 1234567&lt;div&gt; &#123;% if not is_index %&#125; &lt;div style="text-align:center;color: #3c3c3c;font-size:15px;"&gt;-------------本文结束&lt;i class="fa fa-paw"&gt;&lt;/i&gt;感谢您的阅读-------------&lt;/div&gt; &#123;% endif %&#125;&lt;/div&gt;//如果想替换别的颜色可以更改 color： #后面的色值， font-size:15px 文字大小 二、修改 post.swig 文件打开Blog\themes\next\layout_macro\post.swig文件，在post-body后，post-footer前，添加以下代码 ，可能会找不到，博主这里是直接添加到第 354 行的位置 &lt;div&gt; {% if not is_index %} {% include 'passage-end-tag.swig' %} {% endif %} &lt;/div&gt;三、最后修改主题配置文件打开 Blog\themes\next _config.yml 在末尾的地方添加如下代码 #文章末尾添加“本文结束”标记 passage_end_tag: enabled: true 最后进入博客根目录，执行下面这条命令即可，小扩展：hexo clean 重建缓存，Hexo server –debug 调试 $ hexo clean &amp;&amp; Hexo server –debug]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+</search>
