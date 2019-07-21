@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blon.club/"/>
-  <updated>2019-07-19T06:17:58.467Z</updated>
+  <updated>2019-07-21T02:55:00.060Z</updated>
   <id>https://blon.club/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java for循环奇偶数练习</title>
+    <link href="https://blon.club/2019/07/21/Java%20for%E5%BE%AA%E7%8E%AF%E5%A5%87%E5%81%B6%E6%95%B0%E7%BB%83%E4%B9%A0/"/>
+    <id>https://blon.club/2019/07/21/Java for循环奇偶数练习/</id>
+    <published>2019-07-21T07:01:18.000Z</published>
+    <updated>2019-07-21T02:55:00.060Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="题目要求"><a href="#题目要求" class="headerlink" title="题目要求"></a>题目要求</h6><p>输出两位数的所有偶数</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 方法一</span></span><br><span class="line">  <span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">even</span> </span>&#123;</span><br><span class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String []args)</span> </span>&#123;</span><br><span class="line">         <span class="comment">//定义变量，范围 10 ~ 99</span></span><br><span class="line">         <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">10</span>; i &lt; <span class="number">99</span>; i++) &#123;</span><br><span class="line">            <span class="comment">//判断是否为偶数</span></span><br><span class="line">            <span class="keyword">if</span> (i % <span class="number">2</span> == <span class="number">0</span>) &#123;</span><br><span class="line">                System.out.println(i);</span><br><span class="line">            &#125;</span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br><span class="line"> <span class="comment">// 方法二</span></span><br><span class="line"> <span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">even</span> </span>&#123;</span><br><span class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String []args)</span> </span>&#123;</span><br><span class="line">         <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">10</span>; i &lt; <span class="number">99</span>; i += <span class="number">2</span>) &#123;</span><br><span class="line">             System.out.println(i);</span><br><span class="line">         &#125;                 </span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure><p>将方法二运用到 while 循环上，</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//题目要求：打印100 ~ 200的奇数</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">even</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String []args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">100</span>; <span class="comment">//初始化 i</span></span><br><span class="line">        <span class="keyword">while</span> (i &lt;= <span class="number">200</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span> (i % <span class="number">2</span> == <span class="number">1</span>) &#123;   <span class="comment">//或者 i % 2 != 0</span></span><br><span class="line">                System.out.println(i);</span><br><span class="line">            &#125;</span><br><span class="line">            i++ ;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//方法二 </span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">even</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String []args)</span> </span>&#123;</span><br><span class="line">         <span class="keyword">int</span> i = <span class="number">100</span>; <span class="comment">//初始化 i</span></span><br><span class="line">         <span class="keyword">while</span> (i &lt;= <span class="number">200</span>)&#123;</span><br><span class="line">             System.out.println(i);</span><br><span class="line">             i += <span class="number">2</span> ;</span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>获取各个位之和</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> 村长ABC</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@version</span> 1.0.0</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@ClassName</span> num.java</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description</span> 描述：获取各个位之和</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Precautions</span> 注意事项：</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@createTime</span> 2019年07月21日 15:47:00</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">num</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> num = <span class="number">123</span>;</span><br><span class="line">        <span class="keyword">int</span> i = num % <span class="number">10</span> + num / <span class="number">10</span> % <span class="number">10</span> + num / <span class="number">100</span> % <span class="number">10</span>;</span><br><span class="line">        System.out.println(i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h6 id=&quot;题目要求&quot;&gt;&lt;a href=&quot;#题目要求&quot; class=&quot;headerlink&quot; title=&quot;题目要求&quot;&gt;&lt;/a&gt;题目要求&lt;/h6&gt;&lt;p&gt;输出两位数的所有偶数&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td c
+      
+    
+    </summary>
+    
+      <category term="-java" scheme="https://blon.club/categories/java/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Hexo Next博客搭建---入门篇</title>
@@ -78,31 +102,6 @@
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo Next博客搭建---撰写博客</title>
-    <link href="https://blon.club/2019/07/18/Hexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E2%80%94%E2%80%94%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF/"/>
-    <id>https://blon.club/2019/07/18/Hexo-Next博客搭建——动态背景/</id>
-    <published>2019-07-18T12:15:26.000Z</published>
-    <updated>2019-07-18T15:14:00.737Z</updated>
-    
-    <content type="html"><![CDATA[<h5 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h5><p>博客搭建完成后就是开始写博文了，在写博文之前需要给博文添加分类以及标签，这里说一下博主踩过的坑，最开始的时候，由于是小白，直接就那样写了，当时分类页和标签页都配置好了，但是分类和标签都是空的，what ???，怀疑人生都，最后问度娘才知道，原来是配置出错了。</p><p>进入博客根目录分别打开 Blog\source\categories\index.md 和 Blog\source\tags\index.md 分别往里面添加一行代码（红线部分）<img src="https://i.loli.net/2019/07/18/5d307724b289c71620.png" alt="5d307724b289c71620"></p><p><img src="https://i.loli.net/2019/07/18/5d307777160ae13155.png" alt="5d307777160ae13155"></p><p>然后就可以撰写博客了 以这种格式编写就可以了</p><p><img src="https://i.loli.net/2019/07/18/5d3081390402c59876.png" alt="5d3081390402c59876"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h5 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h5&gt;&lt;p&gt;博客搭建完成后就是开始写博文了，在写博文之前需要给博文添加分类以及标签，这里说一下博主踩过的坑，最开始的时候，由于是小白，直接就那样写了，当
-      
-    
-    </summary>
-    
-      <category term="hexo" scheme="https://blon.club/categories/hexo/"/>
-    
-    
-      <category term="hexo" scheme="https://blon.club/tags/hexo/"/>
     
   </entry>
   

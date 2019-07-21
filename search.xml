@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Java for循环奇偶数练习]]></title>
+    <url>%2F2019%2F07%2F21%2FJava%20for%E5%BE%AA%E7%8E%AF%E5%A5%87%E5%81%B6%E6%95%B0%E7%BB%83%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[题目要求输出两位数的所有偶数 1234567891011121314151617181920// 方法一 public class even &#123; public static void main(String []args) &#123; //定义变量，范围 10 ~ 99 for (int i = 10; i &lt; 99; i++) &#123; //判断是否为偶数 if (i % 2 == 0) &#123; System.out.println(i); &#125; &#125; &#125; &#125; // 方法二 public class even &#123; public static void main(String []args) &#123; for (int i = 10; i &lt; 99; i += 2) &#123; System.out.println(i); &#125; &#125; &#125; 将方法二运用到 while 循环上， 12345678910111213141516171819202122//题目要求：打印100 ~ 200的奇数public class even &#123; public static void main(String []args) &#123; int i = 100; //初始化 i while (i &lt;= 200)&#123; if (i % 2 == 1) &#123; //或者 i % 2 != 0 System.out.println(i); &#125; i++ ; &#125; &#125;&#125;//方法二 public class even &#123; public static void main(String []args) &#123; int i = 100; //初始化 i while (i &lt;= 200)&#123; System.out.println(i); i += 2 ; &#125; &#125;&#125; 获取各个位之和 123456789101112131415/** * @author 村长ABC * @version 1.0.0 * @ClassName num.java * @Description 描述：获取各个位之和 * @Precautions 注意事项： * @createTime 2019年07月21日 15:47:00 */public class num &#123; public static void main(String[] args) &#123; int num = 123; int i = num % 10 + num / 10 % 10 + num / 100 % 10; System.out.println(i); &#125;&#125;]]></content>
+      <categories>
+        <category>-java</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo Next博客搭建---入门篇]]></title>
     <url>%2F2019%2F07%2F19%2FHexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E5%85%A5%E9%97%A8%E7%AF%87%2F</url>
     <content type="text"><![CDATA[前言什么是 Hexo ?Hexo 是一个快速、简洁、高效、高逼格的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 安装所需要的工具Git __ __ Node.js 安装完成后打开cmd（win + r ）输入分别下面两条命令查看版本信息，返回的是版本信息就说明安装成功了 1git --version node -v 接下来就可以安装Hexo了，继续在命令行输入下面这条命令，第一条命令阔能会很慢，甚至要翻墙！所以这里给出了第二条命令，阿里的源，速度相对来说快很多。 1npm install -g hexo-cli 12npm install -g cnpm --registry=https://registry.npm.taobao.org cnpm install hexo-cli -g 安装完成后输入 hexo -v 查看版本信息，返回的是版本信息就说明安装成功了 初始化hexo新建一个空文件夹，名称随意，打开后右键选择Git Bash Here打开Git命令窗口，然后执行 1$hexo init 安装依赖包1$npm install 执行完后会在刚刚创建的文件夹中生成相关的文件 最后执行下面的命令，完成后会出现一个网址 http://localhost:4000在浏览器输入这个网址就行了，因为是在调试模式下运行（为了方便后续更改）所以后台一直在执行，如果要关闭这个进程可以 Ctrl + c 关闭 1$ hexo clean &amp;&amp; hexo server --debug 预览效果 至此，初步搭建完成，]]></content>
@@ -26,17 +34,6 @@
     <title><![CDATA[Hexo Next博客搭建---动态背景]]></title>
     <url>%2F2019%2F07%2F18%2FHexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF%2F</url>
     <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[Hexo Next博客搭建---撰写博客]]></title>
-    <url>%2F2019%2F07%2F18%2FHexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E2%80%94%E2%80%94%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF%2F</url>
-    <content type="text"><![CDATA[前言博客搭建完成后就是开始写博文了，在写博文之前需要给博文添加分类以及标签，这里说一下博主踩过的坑，最开始的时候，由于是小白，直接就那样写了，当时分类页和标签页都配置好了，但是分类和标签都是空的，what ???，怀疑人生都，最后问度娘才知道，原来是配置出错了。 进入博客根目录分别打开 Blog\source\categories\index.md 和 Blog\source\tags\index.md 分别往里面添加一行代码（红线部分） 然后就可以撰写博客了 以这种格式编写就可以了]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
   </entry>
   <entry>
     <title><![CDATA[Hexo Next博客搭建---文章结尾添加版权信息]]></title>
