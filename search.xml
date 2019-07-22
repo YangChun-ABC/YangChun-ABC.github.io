@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Java 自增自减概述]]></title>
+    <url>%2F2019%2F07%2F22%2FJava%20%E8%87%AA%E5%A2%9E%E8%87%AA%E5%87%8F%E6%A6%82%E8%BF%B0%2F</url>
+    <content type="text"><![CDATA[一、概述自增操作符 ++ ，即变量自身加1。自减操作符 – ，即变量自身减1 ，在单独使用时前++和后++没有区别， 二、分类自增操作主要分为前置自增和后置自增，相同自减操作也一样，主要分为前置自减和后置自减演示如下代码 1234567//自增int i = 10,j = 20 ;i++; //i = 11++j; //j = 21//自减i-- //i = 10--j //j = 20 如下表格，进行赋值操作 int i = 操作符 操作符 名称 描述 结果(假设 j = 1) var++ 后置自增 将var加1，在语句中使用原来的var i = 1 , j = 2 ++var 前置自增 将var加1，在语句中使用新的var i = 2 , j = 2 var– 后置自减 将var减1，语句中使用原来的var i = 1 , j = 0 –var 前置自减 将var减1，语句中使用新的var i = 0 , j = 0 12345678// 思路： a++的值为 a ，++a的值为a+1int a = 5 ,b = 5 ;int c = a++; //分析：将a++的值 5 赋值给 c ,然后a再自增 1 int d = ++b; //分析：将++b的值 6 赋值给 d ,然后b再自增 1System.out.println(a) //a = 6System.out.println(b) //b = 6System.out.println(c) //c = 5 System.out.println(d) //d = 6 再举个栗子 1234int i = 10 ;int j = i++ + i * 3;System.out.println(i) //11System.out.println(j) //43]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Java for循环奇偶数练习]]></title>
     <url>%2F2019%2F07%2F21%2FJava%20for%E5%BE%AA%E7%8E%AF%E5%A5%87%E5%81%B6%E6%95%B0%E7%BB%83%E4%B9%A0%2F</url>
     <content type="text"><![CDATA[题目要求输出两位数的所有偶数 1234567891011121314151617181920// 方法一 public class even &#123; public static void main(String []args) &#123; //定义变量，范围 10 ~ 99 for (int i = 10; i &lt; 99; i++) &#123; //判断是否为偶数 if (i % 2 == 0) &#123; System.out.println(i); &#125; &#125; &#125; &#125; // 方法二 public class even &#123; public static void main(String []args) &#123; for (int i = 10; i &lt; 99; i += 2) &#123; System.out.println(i); &#125; &#125; &#125; 将方法二运用到 while 循环上， 12345678910111213141516171819202122//题目要求：打印100 ~ 200的奇数public class even &#123; public static void main(String []args) &#123; int i = 100; //初始化 i while (i &lt;= 200)&#123; if (i % 2 == 1) &#123; //或者 i % 2 != 0 System.out.println(i); &#125; i++ ; &#125; &#125;&#125;//方法二 public class even &#123; public static void main(String []args) &#123; int i = 100; //初始化 i while (i &lt;= 200)&#123; System.out.println(i); i += 2 ; &#125; &#125;&#125; 获取各个位之和 123456789101112131415/** * @author 村长ABC * @version 1.0.0 * @ClassName num.java * @Description 描述：获取各个位之和 * @Precautions 注意事项： * @createTime 2019年07月21日 15:47:00 */public class num &#123; public static void main(String[] args) &#123; int num = 123; int i = num % 10 + num / 10 % 10 + num / 100 % 10; System.out.println(i); &#125;&#125;]]></content>
       <categories>
-        <category>-java</category>
+        <category>java</category>
       </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Hexo Next博客搭建---入门篇]]></title>
@@ -29,11 +43,6 @@
       <tags>
         <tag>hexo</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hexo Next博客搭建---动态背景]]></title>
-    <url>%2F2019%2F07%2F18%2FHexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF%2F</url>
-    <content type="text"></content>
   </entry>
   <entry>
     <title><![CDATA[Hexo Next博客搭建---文章结尾添加版权信息]]></title>
