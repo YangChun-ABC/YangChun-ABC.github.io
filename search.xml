@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Java Random随机数]]></title>
+    <url>%2F2019%2F07%2F23%2FJava%20Random%E9%9A%8F%E6%9C%BA%E6%95%B0%2F</url>
+    <content type="text"><![CDATA[Random随机类三个步骤 1、导包 import java.util.Random; 2、创建 Random r = new Random 3、使用 获取一个int类型的随机数，int i = r.nextInt()小括号可以留空，如果留空那么获取随机数范围是int范围里的随机一个数， 举个栗子 123456public class Main&#123; public static void main(String []args) &#123; Random r = new Random(); int i = r.nextInt(); //输出结果为int范围中的随机一个数 &#125;&#125; 如果要获取指定范围的随机数，那么小括号里填入范围数，int i = r.nextInt(100)括号里的参数代表了范围 左闭右开区间，实际含义是[ 0 ~ 100)，实际范围是0 ~ 99， 因为是右开区间所以右边的100是取不到的 1int i = r.nextInt(100); //范围0 ~ 99 如果要想获取1 ~ 100之间的随机的，需要整体加 1 1int i = r.nextInt(100) + 1; //范围1 ~ 100 接下来玩个小游戏 猜一个1 ~ 100 以内的随机数，如果猜的数值大于随机数值则提示太大了，反之提示太小了，直到猜中为止。 1234567891011121314151617181920public class Main&#123; public static void main(String []args) &#123; //创建对象 Random r = new Random(); int i = r.nextInt(100) + 1; Scanner sca = new Scanner(System.in); while(true)&#123; //创建死循环 System.out.println("请开始你的表演"); int j = sca.nextInt(); if(j &gt; i) &#123; System.out.println("太大了"); &#125;else if(j &lt; i) &#123; System.out.println("太小了"); &#125;else&#123; System.out.println("恭喜，答对了"); break; &#125; &#125; &#125;&#125;]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Java 匿名对象概述]]></title>
     <url>%2F2019%2F07%2F23%2FJava%20%E5%8C%BF%E5%90%8D%E5%AF%B9%E8%B1%A1%E6%A6%82%E8%BF%B0%2F</url>
     <content type="text"><![CDATA[一般情况我们创建一个对象，总是要给对象取一个名字，但在有些情况下这个名字是可以省略的。没有名字的对象就叫匿名对像。 一般情况创建对象的标准格式 类名称 对象名 = new 类名称(); 举个栗子 12345678public class Main&#123; public static void main(String []args) &#123; //根据Person类创建对象 Person person = new Person(); person.name = "村长"; person.Main //我叫村长 &#125;&#125; 创建一个类 123456public class Person &#123; String name; public void Main ()&#123; System.out.println("我叫" + name) &#125;&#125; 匿名对像格式，只有右边的对象，没有左边的名字以及赋值运算符 new 类名称 () ; 12new Person().name = "村长"new Person().Main // 我叫null 输出结果不会是“我叫村长”，原因是创建了一个全新的匿名对象 注意事项 匿名对象只能使用唯一的一次，下次使用只能再创建 使用建议 如果确定一个对象，只需要使用唯一的一次，那就可以使用匿名对象]]></content>
