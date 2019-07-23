@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Java 匿名对象概述]]></title>
+    <url>%2F2019%2F07%2F23%2FJava%20%E5%8C%BF%E5%90%8D%E5%AF%B9%E8%B1%A1%E6%A6%82%E8%BF%B0%2F</url>
+    <content type="text"><![CDATA[一般情况我们创建一个对象，总是要给对象取一个名字，但在有些情况下这个名字是可以省略的。没有名字的对象就叫匿名对像。 一般情况创建对象的标准格式 类名称 对象名 = new 类名称(); 举个栗子 12345678public class Main&#123; public static void main(String []args) &#123; //根据Person类创建对象 Person person = new Person(); person.name = "村长"; person.Main //我叫村长 &#125;&#125; 创建一个类 123456public class Person &#123; String name; public void Main ()&#123; System.out.println("我叫" + name) &#125;&#125; 匿名对像格式，只有右边的对象，没有左边的名字以及赋值运算符 new 类名称 () ; 12new Person().name = "村长"new Person().Main // 我叫null 输出结果不会是“我叫村长”，原因是创建了一个全新的匿名对象 注意事项 匿名对象只能使用唯一的一次，下次使用只能再创建 使用建议 如果确定一个对象，只需要使用唯一的一次，那就可以使用匿名对象]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Java 自增自减概述]]></title>
     <url>%2F2019%2F07%2F22%2FJava%20%E8%87%AA%E5%A2%9E%E8%87%AA%E5%87%8F%E6%A6%82%E8%BF%B0%2F</url>
     <content type="text"><![CDATA[一、概述自增操作符 ++ ，即变量自身加1。自减操作符 – ，即变量自身减1 ，在单独使用时前++和后++没有区别， 二、分类自增操作主要分为前置自增和后置自增，相同自减操作也一样，主要分为前置自减和后置自减演示如下代码 1234567//自增int i = 10,j = 20 ;i++; //i = 11++j; //j = 21//自减i-- //i = 10--j //j = 20 如下表格，进行赋值操作 int i = 操作符 操作符 名称 描述 结果(假设 j = 1) var++ 后置自增 将var加1，在语句中使用原来的var i = 1 , j = 2 ++var 前置自增 将var加1，在语句中使用新的var i = 2 , j = 2 var– 后置自减 将var减1，语句中使用原来的var i = 1 , j = 0 –var 前置自减 将var减1，语句中使用新的var i = 0 , j = 0 12345678// 思路： a++的值为 a ，++a的值为a+1int a = 5 ,b = 5 ;int c = a++; //分析：将a++的值 5 赋值给 c ,然后a再自增 1 int d = ++b; //分析：将++b的值 6 赋值给 d ,然后b再自增 1System.out.println(a) //a = 6System.out.println(b) //b = 6System.out.println(c) //c = 5 System.out.println(d) //d = 6 再举个栗子 1234int i = 10 ;int j = i++ + i * 3;System.out.println(i) //11System.out.println(j) //43]]></content>

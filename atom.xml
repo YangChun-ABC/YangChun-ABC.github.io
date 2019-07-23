@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blon.club/"/>
-  <updated>2019-07-22T16:23:48.369Z</updated>
+  <updated>2019-07-23T10:17:59.920Z</updated>
   <id>https://blon.club/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java 匿名对象概述</title>
+    <link href="https://blon.club/2019/07/23/Java%20%E5%8C%BF%E5%90%8D%E5%AF%B9%E8%B1%A1%E6%A6%82%E8%BF%B0/"/>
+    <id>https://blon.club/2019/07/23/Java 匿名对象概述/</id>
+    <published>2019-07-23T08:25:17.000Z</published>
+    <updated>2019-07-23T10:17:59.920Z</updated>
+    
+    <content type="html"><![CDATA[<p>一般情况我们创建一个对象，总是要给对象取一个名字，但在有些情况下这个名字是可以省略的。没有名字的对象就叫匿名对像。</p><p>一般情况创建对象的标准格式</p><blockquote><p>类名称 对象名 = new 类名称();</p></blockquote><p>举个栗子</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String []args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//根据Person类创建对象</span></span><br><span class="line">        Person person = <span class="keyword">new</span> Person();</span><br><span class="line">        person.name = <span class="string">"村长"</span>;</span><br><span class="line">        person.Main <span class="comment">//我叫村长</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>创建一个类</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    String name;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Main</span> <span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"我叫"</span> + name)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>匿名对像格式，只有右边的对象，没有左边的名字以及赋值运算符</p><blockquote><p>new 类名称 () ;</p></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Person().name = <span class="string">"村长"</span></span><br><span class="line"><span class="keyword">new</span> Person().Main <span class="comment">//   我叫null 输出结果不会是“我叫村长”，原因是创建了一个全新的匿名对象</span></span><br></pre></td></tr></table></figure><p>注意事项</p><p>匿名对象只能使用唯一的一次，下次使用只能再创建</p><p>使用建议</p><p>如果确定一个对象，只需要使用唯一的一次，那就可以使用匿名对象</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;一般情况我们创建一个对象，总是要给对象取一个名字，但在有些情况下这个名字是可以省略的。没有名字的对象就叫匿名对像。&lt;/p&gt;
+&lt;p&gt;一般情况创建对象的标准格式&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;类名称 对象名 = new 类名称();&lt;/p&gt;
+&lt;/blockquote&gt;
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://blon.club/categories/java/"/>
+    
+    
+      <category term="java" scheme="https://blon.club/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>Java 自增自减概述</title>
