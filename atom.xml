@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blon.club/"/>
-  <updated>2019-07-23T14:12:21.776Z</updated>
+  <updated>2019-07-27T10:12:05.571Z</updated>
   <id>https://blon.club/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java 字符串概述及比较</title>
+    <link href="https://blon.club/2019/07/27/Java-%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A6%82%E8%BF%B0%E5%8F%8A%E6%AF%94%E8%BE%83/"/>
+    <id>https://blon.club/2019/07/27/Java-字符串概述及比较/</id>
+    <published>2019-07-27T10:02:17.000Z</published>
+    <updated>2019-07-27T10:12:05.571Z</updated>
+    
+    <content type="html"><![CDATA[<h6 id="String类概述"><a href="#String类概述" class="headerlink" title="String类概述"></a>String类概述</h6><p>包路径：<strong>java.lang.String</strong></p><p>api当中说：Java 程序中的所有字符串字面值（如 <code>&quot;abc&quot;</code> ）都作为此类的实例实现。其实是说：程序当中所有双引号字符串都是String对象，即使没有new也是。</p><h6 id="字符串的特点"><a href="#字符串的特点" class="headerlink" title="字符串的特点"></a>字符串的特点</h6><ul><li><strong>字符串的内容永不可变</strong></li><li>正是因为字符串不可改变所以字符串可以共享使用</li><li>字符串效果相当于char [] 字符数组，但底层原理是byte [] 字节数组</li></ul><h6 id="创建字符串常见的3-1种方式"><a href="#创建字符串常见的3-1种方式" class="headerlink" title="创建字符串常见的3+1种方式"></a>创建字符串常见的3+1种方式</h6><ol><li><p>三种构造方法</p><ol><li>public String (); 创建一个空白字符串，不含有任何内容</li><li>public String (char [] array); 根据char字符数组来创建字符串</li><li>public String (byte [] array); 根据byte字节数组来创建字符串</li></ol></li><li><p>一种直接创建</p><p>String str = “hello”;</p></li></ol><h6 id="代码实例"><a href="#代码实例" class="headerlink" title="代码实例"></a>代码实例</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//空参构造</span></span><br><span class="line">String str = <span class="keyword">new</span> String();</span><br><span class="line">System.out.println(<span class="string">"第一个字符串："</span> + str);</span><br><span class="line"></span><br><span class="line"><span class="comment">//使用字符数组来创建字符串</span></span><br><span class="line"><span class="keyword">char</span> [] charArr = &#123;<span class="string">'A'</span>,<span class="string">'B'</span>,<span class="string">'C'</span>&#125; ;</span><br><span class="line">String str2 = <span class="keyword">new</span> String(charArr) ;</span><br><span class="line">System.out.println(<span class="string">"第二个字符串："</span> + str2);</span><br><span class="line"></span><br><span class="line"><span class="comment">//使用byte数组来创建字符串</span></span><br><span class="line"><span class="keyword">byte</span> [] bytrArr = &#123;<span class="number">97</span>,<span class="number">98</span>,<span class="number">99</span>&#125;;</span><br><span class="line">String str3 = <span class="keyword">new</span> String(bytrArr) ;</span><br><span class="line">System.out.println(<span class="string">"第二个字符串："</span>+str3);</span><br><span class="line"></span><br><span class="line"><span class="comment">//直接创建</span></span><br><span class="line">String s = <span class="string">"hello"</span>;</span><br><span class="line">System.out.println(s);</span><br></pre></td></tr></table></figure><h6 id="字符串的内容比较"><a href="#字符串的内容比较" class="headerlink" title="字符串的内容比较"></a>字符串的内容比较</h6><p>==是进行对象的地址值比较，如果需要字符串的内容比较，有如下两种方法</p><p>1、public boolean equals(Object obj) 参数可以是任何类型，只有参数是一个字符串并且内容相同时才会是true 否则为false</p><p>2、equalsIgnoreCase方法，不区分大小写</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">  方法一</span></span><br><span class="line"><span class="comment">  格式</span></span><br><span class="line"><span class="comment">  参数1.equals(参数2)</span></span><br><span class="line"><span class="comment">  该方法严格区分大小写</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">        String str1 = <span class="string">"ABC"</span>;</span><br><span class="line">        String str2 = <span class="string">"ABC"</span>;</span><br><span class="line">        <span class="comment">//两个变量比较</span></span><br><span class="line"></span><br><span class="line">        System.out.println(str1.equals(str2));</span><br><span class="line">        <span class="comment">//变量和常量比较</span></span><br><span class="line">        System.out.println(str1.equals(<span class="string">"hello"</span>));</span><br><span class="line">        <span class="comment">//常量与常量比较</span></span><br><span class="line">        System.out.println(<span class="string">"hello"</span>.equals(<span class="string">"hello"</span>));</span><br><span class="line">  <span class="comment">/*方法二</span></span><br><span class="line"><span class="comment">  格式</span></span><br><span class="line"><span class="comment">  参数1.equalsIgnoreCase(参数2)</span></span><br><span class="line"><span class="comment">  该方法不区分大小写（英文）</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">       System.out.println(str1.equalsIgnoreCase(<span class="string">"abc"</span>));</span><br></pre></td></tr></table></figure><h6 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h6><p>1、任何对象都可以用Object 来接收</p><p>2、equals方法具有对称性 a.equals(b) 和 b.equals(a) 效果一样</p><p>3、如果比较双方一个是常量字符串一个是变量字符串 ，推荐把常量放在前面，变量放在后面，</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"ABC"</span>.equals(str1) <span class="comment">//推荐        </span></span><br><span class="line">str1.equals(<span class="string">"ABC"</span>) <span class="comment">//不推荐</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h6 id=&quot;String类概述&quot;&gt;&lt;a href=&quot;#String类概述&quot; class=&quot;headerlink&quot; title=&quot;String类概述&quot;&gt;&lt;/a&gt;String类概述&lt;/h6&gt;&lt;p&gt;包路径：&lt;strong&gt;java.lang.String&lt;/strong&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://blon.club/categories/java/"/>
+    
+    
+      <category term="java" scheme="https://blon.club/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>Java Random随机数</title>

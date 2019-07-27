@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Java 字符串概述及比较]]></title>
+    <url>%2F2019%2F07%2F27%2FJava-%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A6%82%E8%BF%B0%E5%8F%8A%E6%AF%94%E8%BE%83%2F</url>
+    <content type="text"><![CDATA[String类概述包路径：java.lang.String api当中说：Java 程序中的所有字符串字面值（如 &quot;abc&quot; ）都作为此类的实例实现。其实是说：程序当中所有双引号字符串都是String对象，即使没有new也是。 字符串的特点 字符串的内容永不可变 正是因为字符串不可改变所以字符串可以共享使用 字符串效果相当于char [] 字符数组，但底层原理是byte [] 字节数组 创建字符串常见的3+1种方式 三种构造方法 public String (); 创建一个空白字符串，不含有任何内容 public String (char [] array); 根据char字符数组来创建字符串 public String (byte [] array); 根据byte字节数组来创建字符串 一种直接创建 String str = “hello”; 代码实例1234567891011121314151617//空参构造String str = new String();System.out.println("第一个字符串：" + str);//使用字符数组来创建字符串char [] charArr = &#123;'A','B','C'&#125; ;String str2 = new String(charArr) ;System.out.println("第二个字符串：" + str2);//使用byte数组来创建字符串byte [] bytrArr = &#123;97,98,99&#125;;String str3 = new String(bytrArr) ;System.out.println("第二个字符串："+str3);//直接创建String s = "hello";System.out.println(s); 字符串的内容比较==是进行对象的地址值比较，如果需要字符串的内容比较，有如下两种方法 1、public boolean equals(Object obj) 参数可以是任何类型，只有参数是一个字符串并且内容相同时才会是true 否则为false 2、equalsIgnoreCase方法，不区分大小写 123456789101112131415161718192021/* 方法一 格式 参数1.equals(参数2) 该方法严格区分大小写 */ String str1 = "ABC"; String str2 = "ABC"; //两个变量比较 System.out.println(str1.equals(str2)); //变量和常量比较 System.out.println(str1.equals("hello")); //常量与常量比较 System.out.println("hello".equals("hello")); /*方法二 格式 参数1.equalsIgnoreCase(参数2) 该方法不区分大小写（英文） */ System.out.println(str1.equalsIgnoreCase("abc")); 注意事项1、任何对象都可以用Object 来接收 2、equals方法具有对称性 a.equals(b) 和 b.equals(a) 效果一样 3、如果比较双方一个是常量字符串一个是变量字符串 ，推荐把常量放在前面，变量放在后面， 12"ABC".equals(str1) //推荐 str1.equals("ABC") //不推荐]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Java Random随机数]]></title>
     <url>%2F2019%2F07%2F23%2FJava%20Random%E9%9A%8F%E6%9C%BA%E6%95%B0%2F</url>
     <content type="text"><![CDATA[Random随机类三个步骤 1、导包 import java.util.Random; 2、创建 Random r = new Random 3、使用 获取一个int类型的随机数，int i = r.nextInt()小括号可以留空，如果留空那么获取随机数范围是int范围里的随机一个数， 举个栗子 123456public class Main&#123; public static void main(String []args) &#123; Random r = new Random(); int i = r.nextInt(); //输出结果为int范围中的随机一个数 &#125;&#125; 如果要获取指定范围的随机数，那么小括号里填入范围数，int i = r.nextInt(100)括号里的参数代表了范围 左闭右开区间，实际含义是[ 0 ~ 100)，实际范围是0 ~ 99， 因为是右开区间所以右边的100是取不到的 1int i = r.nextInt(100); //范围0 ~ 99 如果要想获取1 ~ 100之间的随机的，需要整体加 1 1int i = r.nextInt(100) + 1; //范围1 ~ 100 接下来玩个小游戏 猜一个1 ~ 100 以内的随机数，如果猜的数值大于随机数值则提示太大了，反之提示太小了，直到猜中为止。 1234567891011121314151617181920public class Main&#123; public static void main(String []args) &#123; //创建对象 Random r = new Random(); int i = r.nextInt(100) + 1; Scanner sca = new Scanner(System.in); while(true)&#123; //创建死循环 System.out.println("请开始你的表演"); int j = sca.nextInt(); if(j &gt; i) &#123; System.out.println("太大了"); &#125;else if(j &lt; i) &#123; System.out.println("太小了"); &#125;else&#123; System.out.println("恭喜，答对了"); break; &#125; &#125; &#125;&#125;]]></content>
