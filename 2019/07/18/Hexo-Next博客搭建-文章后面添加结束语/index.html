@@ -99,19 +99,21 @@
     }
   };
 </script>
+<link rel="stylesheet" href="/js/prism/prism.css">
 
-  <meta name="description" content="文章后面添加结束标语 一、新建文件在 Blog\themes\next\layout\_macro 下创建 passage-end-tag.swig 文件 ，打开该文件添加以下代码 1234567&amp;lt;div&amp;gt;    &amp;#123;% if not is_index %&amp;#125;        &amp;lt;div style=&quot;text-align:center;color: #3c3c3c;">
+
+  <meta name="description" content="文章后面添加结束标语 一、新建文件在 Blog\themes\next\layout\_macro 下创建 passage-end-tag.swig 文件 ，打开该文件添加以下代码 &amp;lt;div&amp;gt;     {% if not is_index %}         -------------本文结束感谢您的阅读-------------      {% endif %} &amp;lt;/div&amp;">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo Next博客搭建---文章后面添加结束语">
 <meta property="og:url" content="https://blon.club/2019/07/18/Hexo-Next博客搭建-文章后面添加结束语/index.html">
 <meta property="og:site_name" content="村长ABC">
-<meta property="og:description" content="文章后面添加结束标语 一、新建文件在 Blog\themes\next\layout\_macro 下创建 passage-end-tag.swig 文件 ，打开该文件添加以下代码 1234567&amp;lt;div&amp;gt;    &amp;#123;% if not is_index %&amp;#125;        &amp;lt;div style=&quot;text-align:center;color: #3c3c3c;">
+<meta property="og:description" content="文章后面添加结束标语 一、新建文件在 Blog\themes\next\layout\_macro 下创建 passage-end-tag.swig 文件 ，打开该文件添加以下代码 &amp;lt;div&amp;gt;     {% if not is_index %}         -------------本文结束感谢您的阅读-------------      {% endif %} &amp;lt;/div&amp;">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-07-18T15:09:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Next博客搭建---文章后面添加结束语">
-<meta name="twitter:description" content="文章后面添加结束标语 一、新建文件在 Blog\themes\next\layout\_macro 下创建 passage-end-tag.swig 文件 ，打开该文件添加以下代码 1234567&amp;lt;div&amp;gt;    &amp;#123;% if not is_index %&amp;#125;        &amp;lt;div style=&quot;text-align:center;color: #3c3c3c;">
+<meta name="twitter:description" content="文章后面添加结束标语 一、新建文件在 Blog\themes\next\layout\_macro 下创建 passage-end-tag.swig 文件 ，打开该文件添加以下代码 &amp;lt;div&amp;gt;     {% if not is_index %}         -------------本文结束感谢您的阅读-------------      {% endif %} &amp;lt;/div&amp;">
 
 
 
@@ -484,7 +486,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span title="本文字数">833</span>
+              <span title="本文字数">701</span>
             </span>
           
 
@@ -517,8 +519,13 @@
       
         <p>文章后面添加结束标语</p>
 <h5 id="一、新建文件"><a href="#一、新建文件" class="headerlink" title="一、新建文件"></a>一、新建文件</h5><p>在 <code>Blog\themes\next\layout\_macro</code> 下创建 <code>passage-end-tag.swig</code> 文件 ，打开该文件添加以下代码</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &#123;% <span class="keyword">if</span> not is_index %&#125;</span><br><span class="line">        &lt;div style=<span class="string">"text-align:center;color: #3c3c3c;font-size:15px;"</span>&gt;-------------本文结束&lt;i <span class="class"><span class="keyword">class</span></span>=<span class="string">"fa fa-paw"</span>&gt;&lt;/i&gt;感谢您的阅读-------------&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/如果想替换别的颜色可以更改 color： #后面的色值， font-size:15px 文字大小</span></span><br></pre></td></tr></table></figure>
+<pre><code class="line-numbers language-javascript">&lt;div&gt;
+    {% if not is_index %}
+        <div style="text-align:center;color: #3c3c3c;font-size:15px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
 
+    {% endif %}
+&lt;/div&gt;
+//如果想替换别的颜色可以更改 color： #后面的色值， font-size:15px 文字大小</code></pre>
 <h5 id="二、修改-post-swig-文件"><a href="#二、修改-post-swig-文件" class="headerlink" title="二、修改 post.swig 文件"></a>二、修改 post.swig 文件</h5><p>打开Blog\themes\next\layout_macro\post.swig文件，在<code>post-body</code>后，<code>post-footer</code>前，添加以下代码 ，可能会找不到，博主这里是直接添加到第 354 行的位置</p>
 <pre><code>&lt;div&gt;
   {% if not is_index %}
@@ -553,7 +560,7 @@
         <div id="reward-container">
   <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
   <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
-    打赏
+    赞赏支持
   </button>
   <div id="qr" style="display: none;">
 
@@ -818,12 +825,12 @@
   <div class="links-of-blogroll motion-element links-of-blogroll-block">
     <div class="links-of-blogroll-title">
       <i class="fa  fa-fw fa-link"></i>
-      Links
+      友情链接
     </div>
     <ul class="links-of-blogroll-list">
       
         <li class="links-of-blogroll-item">
-          <a href="https://www.blon.club" title="https://www.blon.club" rel="noopener" target="_blank">Title</a>
+          <a href="https://www.github.com" title="https://www.github.com" rel="noopener" target="_blank">Github</a>
         </li>
       
     </ul>
@@ -939,6 +946,8 @@ function setzero(i){
 }
 show_date_time();
 </script>
+<script src="/js/prism/prism.js" async></script>
+
 
         
 <div class="busuanzi-count">

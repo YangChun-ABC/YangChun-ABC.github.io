@@ -99,19 +99,21 @@
     }
   };
 </script>
+<link rel="stylesheet" href="/js/prism/prism.css">
 
-  <meta name="description" content="在文章结尾处添加版权信息 一、修改主题文件打开 Blog\themes\next\_config.yml 按ctrl + f 查找 creative_commons:将post的值改为true 1234567891011121314# Creative Commons 4.0 International License.# See: https://creativecommons.org/shar">
+
+  <meta name="description" content="在文章结尾处添加版权信息 一、修改主题文件打开 Blog\themes\next\_config.yml 按ctrl + f 查找 creative_commons:将post的值改为true # Creative Commons 4.0 International License. # See: https://creativecommons.org/share-your-work/licens">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo Next博客搭建---文章结尾添加版权信息">
 <meta property="og:url" content="https://blon.club/2019/07/18/Hexo-Next博客搭建-文章结尾添加版权信息/index.html">
 <meta property="og:site_name" content="村长ABC">
-<meta property="og:description" content="在文章结尾处添加版权信息 一、修改主题文件打开 Blog\themes\next\_config.yml 按ctrl + f 查找 creative_commons:将post的值改为true 1234567891011121314# Creative Commons 4.0 International License.# See: https://creativecommons.org/shar">
+<meta property="og:description" content="在文章结尾处添加版权信息 一、修改主题文件打开 Blog\themes\next\_config.yml 按ctrl + f 查找 creative_commons:将post的值改为true # Creative Commons 4.0 International License. # See: https://creativecommons.org/share-your-work/licens">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-07-18T15:10:08.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Next博客搭建---文章结尾添加版权信息">
-<meta name="twitter:description" content="在文章结尾处添加版权信息 一、修改主题文件打开 Blog\themes\next\_config.yml 按ctrl + f 查找 creative_commons:将post的值改为true 1234567891011121314# Creative Commons 4.0 International License.# See: https://creativecommons.org/shar">
+<meta name="twitter:description" content="在文章结尾处添加版权信息 一、修改主题文件打开 Blog\themes\next\_config.yml 按ctrl + f 查找 creative_commons:将post的值改为true # Creative Commons 4.0 International License. # See: https://creativecommons.org/share-your-work/licens">
 
 
 
@@ -484,7 +486,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span title="本文字数">697</span>
+              <span title="本文字数">709</span>
             </span>
           
 
@@ -517,8 +519,20 @@
       
         <p>在文章结尾处添加版权信息</p>
 <h5 id="一、修改主题文件"><a href="#一、修改主题文件" class="headerlink" title="一、修改主题文件"></a>一、修改主题文件</h5><p>打开 <code>Blog\themes\next\_config.yml</code> 按ctrl + f 查找 <code>creative_commons:</code>将post的值改为<code>true</code></p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Creative Commons 4.0 International License.</span></span><br><span class="line"><span class="comment"># See: https://creativecommons.org/share-your-work/licensing-types-examples</span></span><br><span class="line"><span class="comment"># Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero</span></span><br><span class="line"><span class="comment"># You can set a language value if you prefer a translated version of CC license, e.g. deed.zh</span></span><br><span class="line"><span class="comment"># CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org</span></span><br><span class="line"><span class="comment">#版权信息</span></span><br><span class="line"><span class="attr">creative_commons:</span></span><br><span class="line"><span class="attr">  license:</span> <span class="string">by-nc-sa</span>   <span class="comment">#表示当前使用的协议，可以随意更改</span></span><br><span class="line"></span><br><span class="line"><span class="attr">  sidebar:</span> <span class="literal">false</span>      <span class="comment">#表示是否要显示在左侧边栏</span></span><br><span class="line"></span><br><span class="line"><span class="attr">  post:</span> <span class="literal">true</span>          <span class="comment">#表示是否在文章结尾处显示</span></span><br><span class="line"></span><br><span class="line"><span class="attr">  language:</span></span><br></pre></td></tr></table></figure>
+<pre><code class="line-numbers language-yaml"># Creative Commons 4.0 International License.
+# See: https://creativecommons.org/share-your-work/licensing-types-examples
+# Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+# You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
+# CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
+#版权信息
+creative_commons:
+  license: by-nc-sa   #表示当前使用的协议，可以随意更改
 
+  sidebar: false      #表示是否要显示在左侧边栏
+
+  post: true          #表示是否在文章结尾处显示
+
+  language:</code></pre>
 <p>如果你觉得不够详细，可查看<a href="https://hexo-guide.readthedocs.io/zh_CN/latest/theme/[NexT]%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF.html" target="_blank" rel="noopener"> hexo指南 </a></p>
 
       
@@ -544,7 +558,7 @@
         <div id="reward-container">
   <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
   <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
-    打赏
+    赞赏支持
   </button>
   <div id="qr" style="display: none;">
 
@@ -813,12 +827,12 @@
   <div class="links-of-blogroll motion-element links-of-blogroll-block">
     <div class="links-of-blogroll-title">
       <i class="fa  fa-fw fa-link"></i>
-      Links
+      友情链接
     </div>
     <ul class="links-of-blogroll-list">
       
         <li class="links-of-blogroll-item">
-          <a href="https://www.blon.club" title="https://www.blon.club" rel="noopener" target="_blank">Title</a>
+          <a href="https://www.github.com" title="https://www.github.com" rel="noopener" target="_blank">Github</a>
         </li>
       
     </ul>
@@ -934,6 +948,8 @@ function setzero(i){
 }
 show_date_time();
 </script>
+<script src="/js/prism/prism.js" async></script>
+
 
         
 <div class="busuanzi-count">

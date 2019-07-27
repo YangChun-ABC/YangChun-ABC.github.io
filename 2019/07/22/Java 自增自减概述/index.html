@@ -99,19 +99,21 @@
     }
   };
 </script>
+<link rel="stylesheet" href="/js/prism/prism.css">
 
-  <meta name="description" content="一、概述自增操作符 ++ ，即变量自身加1。自减操作符 – ，即变量自身减1 ，在单独使用时前++和后++没有区别， 二、分类自增操作主要分为前置自增和后置自增，相同自减操作也一样，主要分为前置自减和后置自减演示如下代码 1234567//自增int i = 10,j = 20 ;i++;    //i = 11++j;    //j = 21//自减i--    //i = 10--j    /">
+
+  <meta name="description" content="一、概述自增操作符 ++ ，即变量自身加1。自减操作符 – ，即变量自身减1 ，在单独使用时前++和后++没有区别， 二、分类自增操作主要分为前置自增和后置自增，相同自减操作也一样，主要分为前置自减和后置自减演示如下代码 //自增 int i = 10,j = 20 ; i++;    //i = 11 ++j;    //j = 21 //自减 i--    //i = 10 --j    //">
 <meta name="keywords" content="java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java 自增自减概述">
 <meta property="og:url" content="https://blon.club/2019/07/22/Java 自增自减概述/index.html">
 <meta property="og:site_name" content="村长ABC">
-<meta property="og:description" content="一、概述自增操作符 ++ ，即变量自身加1。自减操作符 – ，即变量自身减1 ，在单独使用时前++和后++没有区别， 二、分类自增操作主要分为前置自增和后置自增，相同自减操作也一样，主要分为前置自减和后置自减演示如下代码 1234567//自增int i = 10,j = 20 ;i++;    //i = 11++j;    //j = 21//自减i--    //i = 10--j    /">
+<meta property="og:description" content="一、概述自增操作符 ++ ，即变量自身加1。自减操作符 – ，即变量自身减1 ，在单独使用时前++和后++没有区别， 二、分类自增操作主要分为前置自增和后置自增，相同自减操作也一样，主要分为前置自减和后置自减演示如下代码 //自增 int i = 10,j = 20 ; i++;    //i = 11 ++j;    //j = 21 //自减 i--    //i = 10 --j    //">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-07-22T16:23:48.369Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java 自增自减概述">
-<meta name="twitter:description" content="一、概述自增操作符 ++ ，即变量自身加1。自减操作符 – ，即变量自身减1 ，在单独使用时前++和后++没有区别， 二、分类自增操作主要分为前置自增和后置自增，相同自减操作也一样，主要分为前置自减和后置自减演示如下代码 1234567//自增int i = 10,j = 20 ;i++;    //i = 11++j;    //j = 21//自减i--    //i = 10--j    /">
+<meta name="twitter:description" content="一、概述自增操作符 ++ ，即变量自身加1。自减操作符 – ，即变量自身减1 ，在单独使用时前++和后++没有区别， 二、分类自增操作主要分为前置自增和后置自增，相同自减操作也一样，主要分为前置自减和后置自减演示如下代码 //自增 int i = 10,j = 20 ; i++;    //i = 11 ++j;    //j = 21 //自减 i--    //i = 10 --j    //">
 
 
 
@@ -494,7 +496,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span title="本文字数">791</span>
+              <span title="本文字数">805</span>
             </span>
           
 
@@ -527,8 +529,13 @@
       
         <h6 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h6><p>自增操作符 ++ ，即变量自身加1。自减操作符 – ，即变量自身减1 ，在单独使用时前++和后++没有区别，</p>
 <h6 id="二、分类"><a href="#二、分类" class="headerlink" title="二、分类"></a>二、分类</h6><p>自增操作主要分为<code>前置自增</code>和<code>后置自增</code>，相同自减操作也一样，主要分为<code>前置自减</code>和<code>后置自减</code>演示如下代码</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//自增</span></span><br><span class="line"><span class="keyword">int</span> i = <span class="number">10</span>,j = <span class="number">20</span> ;</span><br><span class="line">i++;    <span class="comment">//i = 11</span></span><br><span class="line">++j;    <span class="comment">//j = 21</span></span><br><span class="line"><span class="comment">//自减</span></span><br><span class="line">i--    <span class="comment">//i = 10</span></span><br><span class="line">--j    <span class="comment">//j = 20</span></span><br></pre></td></tr></table></figure>
-
+<pre><code class="line-numbers language-java">//自增
+int i = 10,j = 20 ;
+i++;    //i = 11
+++j;    //j = 21
+//自减
+i--    //i = 10
+--j    //j = 20</code></pre>
 <p>如下表格，进行赋值操作 int i = <code>操作符</code></p>
 <table>
 <thead>
@@ -564,11 +571,20 @@
 <td align="center">i = 0 , j = 0</td>
 </tr>
 </tbody></table>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 思路： a++的值为 a ，++a的值为a+1</span></span><br><span class="line"><span class="keyword">int</span> a = <span class="number">5</span> ,b = <span class="number">5</span> ;</span><br><span class="line"><span class="keyword">int</span> c = a++;  <span class="comment">//分析：将a++的值 5 赋值给 c ,然后a再自增 1 </span></span><br><span class="line"><span class="keyword">int</span> d = ++b;  <span class="comment">//分析：将++b的值 6 赋值给 d ,然后b再自增 1</span></span><br><span class="line">System.out.println(a)    <span class="comment">//a = 6</span></span><br><span class="line">System.out.println(b)    <span class="comment">//b = 6</span></span><br><span class="line">System.out.println(c)    <span class="comment">//c = 5 </span></span><br><span class="line">System.out.println(d)    <span class="comment">//d = 6</span></span><br></pre></td></tr></table></figure>
-
+<pre><code class="line-numbers language-java">// 思路： a++的值为 a ，++a的值为a+1
+int a = 5 ,b = 5 ;
+int c = a++;  //分析：将a++的值 5 赋值给 c ,然后a再自增 1 
+int d = ++b;  //分析：将++b的值 6 赋值给 d ,然后b再自增 1
+System.out.println(a)    //a = 6
+System.out.println(b)    //b = 6
+System.out.println(c)    //c = 5 
+System.out.println(d)    //d = 6</code></pre>
 <p>再举个栗子</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i = <span class="number">10</span> ;</span><br><span class="line"><span class="keyword">int</span> j = i++ + i * <span class="number">3</span>;</span><br><span class="line">System.out.println(i) <span class="comment">//11</span></span><br><span class="line">System.out.println(j) <span class="comment">//43</span></span><br></pre></td></tr></table></figure>
-
+<pre><code class="line-numbers language-java">int i = 10 ;
+int j = i++ + i * 3;
+System.out.println(i) //11
+System.out.println(j) //43
+</code></pre>
 
       
     </div>
@@ -593,7 +609,7 @@
         <div id="reward-container">
   <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
   <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
-    打赏
+    赞赏支持
   </button>
   <div id="qr" style="display: none;">
 
@@ -862,12 +878,12 @@
   <div class="links-of-blogroll motion-element links-of-blogroll-block">
     <div class="links-of-blogroll-title">
       <i class="fa  fa-fw fa-link"></i>
-      Links
+      友情链接
     </div>
     <ul class="links-of-blogroll-list">
       
         <li class="links-of-blogroll-item">
-          <a href="https://www.blon.club" title="https://www.blon.club" rel="noopener" target="_blank">Title</a>
+          <a href="https://www.github.com" title="https://www.github.com" rel="noopener" target="_blank">Github</a>
         </li>
       
     </ul>
@@ -983,6 +999,8 @@ function setzero(i){
 }
 show_date_time();
 </script>
+<script src="/js/prism/prism.js" async></script>
+
 
         
 <div class="busuanzi-count">

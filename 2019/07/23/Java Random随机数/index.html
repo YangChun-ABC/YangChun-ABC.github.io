@@ -99,19 +99,21 @@
     }
   };
 </script>
+<link rel="stylesheet" href="/js/prism/prism.css">
 
-  <meta name="description" content="Random随机类三个步骤 1、导包  import java.util.Random;  2、创建  Random r = new  Random  3、使用 获取一个int类型的随机数，int i = r.nextInt()小括号可以留空，如果留空那么获取随机数范围是int范围里的随机一个数， 举个栗子 123456public class Main&amp;#123;    public stati">
+
+  <meta name="description" content="Random随机类三个步骤 1、导包  import java.util.Random;  2、创建  Random r = new  Random  3、使用 获取一个int类型的随机数，int i = r.nextInt()小括号可以留空，如果留空那么获取随机数范围是int范围里的随机一个数， 举个栗子 public class Main{     public static void mai">
 <meta name="keywords" content="java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java Random随机数">
 <meta property="og:url" content="https://blon.club/2019/07/23/Java Random随机数/index.html">
 <meta property="og:site_name" content="村长ABC">
-<meta property="og:description" content="Random随机类三个步骤 1、导包  import java.util.Random;  2、创建  Random r = new  Random  3、使用 获取一个int类型的随机数，int i = r.nextInt()小括号可以留空，如果留空那么获取随机数范围是int范围里的随机一个数， 举个栗子 123456public class Main&amp;#123;    public stati">
+<meta property="og:description" content="Random随机类三个步骤 1、导包  import java.util.Random;  2、创建  Random r = new  Random  3、使用 获取一个int类型的随机数，int i = r.nextInt()小括号可以留空，如果留空那么获取随机数范围是int范围里的随机一个数， 举个栗子 public class Main{     public static void mai">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-07-23T14:12:21.776Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java Random随机数">
-<meta name="twitter:description" content="Random随机类三个步骤 1、导包  import java.util.Random;  2、创建  Random r = new  Random  3、使用 获取一个int类型的随机数，int i = r.nextInt()小括号可以留空，如果留空那么获取随机数范围是int范围里的随机一个数， 举个栗子 123456public class Main&amp;#123;    public stati">
+<meta name="twitter:description" content="Random随机类三个步骤 1、导包  import java.util.Random;  2、创建  Random r = new  Random  3、使用 获取一个int类型的随机数，int i = r.nextInt()小括号可以留空，如果留空那么获取随机数范围是int范围里的随机一个数， 举个栗子 public class Main{     public static void mai">
 
 
 
@@ -527,18 +529,38 @@
 <p>3、使用</p>
 <p>获取一个int类型的随机数，<code>int i = r.nextInt()</code>小括号可以留空，如果留空那么获取随机数范围是int范围里的随机一个数，</p>
 <p>举个栗子</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String []args)</span> </span>&#123;</span><br><span class="line">        Random r = <span class="keyword">new</span> Random();</span><br><span class="line">        <span class="keyword">int</span> i = r.nextInt(); <span class="comment">//输出结果为int范围中的随机一个数</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="line-numbers language-java">public class Main{
+    public static void main(String []args) {
+        Random r = new Random();
+        int i = r.nextInt(); //输出结果为int范围中的随机一个数
+    }
+}</code></pre>
 <p>如果要获取指定范围的随机数，那么小括号里填入范围数，int i = r.nextInt(100)<code>括号里的参数代表了范围 左闭右开区间</code>，实际含义是[ 0 ~ 100)，实际范围是0 ~ 99， 因为是右开区间所以右边的100是取不到的</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i = r.nextInt(<span class="number">100</span>); <span class="comment">//范围0 ~ 99</span></span><br></pre></td></tr></table></figure>
-
+<pre><code class="line-numbers language-java">int i = r.nextInt(100); //范围0 ~ 99</code></pre>
 <p>如果要想获取1 ~ 100之间的随机的，需要整体加 1 </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i = r.nextInt(<span class="number">100</span>) + <span class="number">1</span>; <span class="comment">//范围1 ~ 100</span></span><br></pre></td></tr></table></figure>
-
+<pre><code class="line-numbers language-java">int i = r.nextInt(100) + 1; //范围1 ~ 100</code></pre>
 <p>接下来玩个小游戏</p>
 <p>猜一个1 ~ 100 以内的随机数，如果猜的数值大于随机数值则提示太大了，反之提示太小了，直到猜中为止。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String []args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//创建对象</span></span><br><span class="line">        Random r = <span class="keyword">new</span> Random();</span><br><span class="line">        <span class="keyword">int</span> i = r.nextInt(<span class="number">100</span>) + <span class="number">1</span>;</span><br><span class="line">        Scanner sca = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">while</span>(<span class="keyword">true</span>)&#123; <span class="comment">//创建死循环</span></span><br><span class="line">            System.out.println(<span class="string">"请开始你的表演"</span>);</span><br><span class="line">            <span class="keyword">int</span> j = sca.nextInt();</span><br><span class="line">            <span class="keyword">if</span>(j &gt; i) &#123;</span><br><span class="line">                System.out.println(<span class="string">"太大了"</span>);</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(j &lt; i) &#123;</span><br><span class="line">                System.out.println(<span class="string">"太小了"</span>);</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                System.out.println(<span class="string">"恭喜，答对了"</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="line-numbers language-java">public class Main{
+    public static void main(String []args) {
+        //创建对象
+        Random r = new Random();
+        int i = r.nextInt(100) + 1;
+        Scanner sca = new Scanner(System.in);
+        while(true){ //创建死循环
+            System.out.println(&quot;请开始你的表演&quot;);
+            int j = sca.nextInt();
+            if(j &gt; i) {
+                System.out.println(&quot;太大了&quot;);
+            }else if(j &lt; i) {
+                System.out.println(&quot;太小了&quot;);
+            }else{
+                System.out.println(&quot;恭喜，答对了&quot;);
+                break;
+            }
+        }
+    }
+}</code></pre>
 
       
     </div>
@@ -563,7 +585,7 @@
         <div id="reward-container">
   <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
   <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
-    打赏
+    赞赏支持
   </button>
   <div id="qr" style="display: none;">
 
@@ -823,12 +845,12 @@
   <div class="links-of-blogroll motion-element links-of-blogroll-block">
     <div class="links-of-blogroll-title">
       <i class="fa  fa-fw fa-link"></i>
-      Links
+      友情链接
     </div>
     <ul class="links-of-blogroll-list">
       
         <li class="links-of-blogroll-item">
-          <a href="https://www.blon.club" title="https://www.blon.club" rel="noopener" target="_blank">Title</a>
+          <a href="https://www.github.com" title="https://www.github.com" rel="noopener" target="_blank">Github</a>
         </li>
       
     </ul>
@@ -927,6 +949,8 @@ function setzero(i){
 }
 show_date_time();
 </script>
+<script src="/js/prism/prism.js" async></script>
+
 
         
 <div class="busuanzi-count">
