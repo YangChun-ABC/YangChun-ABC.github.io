@@ -102,18 +102,20 @@
 <link rel="stylesheet" href="/js/prism/prism.css">
 
 
-  <meta name="description" content="String类概述包路径：java.lang.String api当中说：Java 程序中的所有字符串字面值（如 &amp;quot;abc&amp;quot; ）都作为此类的实例实现。其实是说：程序当中所有双引号字符串都是String对象，即使没有new也是。 字符串的特点 字符串的内容永不可变 正是因为字符串不可改变所以字符串可以共享使用 字符串效果相当于char [] 字符数组，但底层原理是byte []">
-<meta name="keywords" content="java">
+  <meta name="description" content="1.全局安装 Gulpnpm install --global gulp上面那条命令基本上废了，很慢，而且还各种报错，失败了n次了。安装失败的可以用下面这条命令 sudo cnpm install --global gulp如果是windows系统，以管理员方式打开cmd 执行下面的命令 cnpm install --global gulp安装完后执行 gulp -v查看是否安装  进入博客项目根">
+<meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java 字符串概述及比较">
-<meta property="og:url" content="https://blon.club/2019/07/27/Java-字符串概述及比较/index.html">
+<meta property="og:title" content="利用Gulp压缩Hexo博客">
+<meta property="og:url" content="https://blon.club/2019/07/28/利用Gulp压缩Hexo博客/index.html">
 <meta property="og:site_name" content="村长ABC">
-<meta property="og:description" content="String类概述包路径：java.lang.String api当中说：Java 程序中的所有字符串字面值（如 &amp;quot;abc&amp;quot; ）都作为此类的实例实现。其实是说：程序当中所有双引号字符串都是String对象，即使没有new也是。 字符串的特点 字符串的内容永不可变 正是因为字符串不可改变所以字符串可以共享使用 字符串效果相当于char [] 字符数组，但底层原理是byte []">
+<meta property="og:description" content="1.全局安装 Gulpnpm install --global gulp上面那条命令基本上废了，很慢，而且还各种报错，失败了n次了。安装失败的可以用下面这条命令 sudo cnpm install --global gulp如果是windows系统，以管理员方式打开cmd 执行下面的命令 cnpm install --global gulp安装完后执行 gulp -v查看是否安装  进入博客项目根">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-27T10:12:05.571Z">
+<meta property="og:image" content="https://i.loli.net/2019/07/28/5d3d611d3351988178.png">
+<meta property="og:updated_time" content="2019-07-28T09:15:06.798Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java 字符串概述及比较">
-<meta name="twitter:description" content="String类概述包路径：java.lang.String api当中说：Java 程序中的所有字符串字面值（如 &amp;quot;abc&amp;quot; ）都作为此类的实例实现。其实是说：程序当中所有双引号字符串都是String对象，即使没有new也是。 字符串的特点 字符串的内容永不可变 正是因为字符串不可改变所以字符串可以共享使用 字符串效果相当于char [] 字符数组，但底层原理是byte []">
+<meta name="twitter:title" content="利用Gulp压缩Hexo博客">
+<meta name="twitter:description" content="1.全局安装 Gulpnpm install --global gulp上面那条命令基本上废了，很慢，而且还各种报错，失败了n次了。安装失败的可以用下面这条命令 sudo cnpm install --global gulp如果是windows系统，以管理员方式打开cmd 执行下面的命令 cnpm install --global gulp安装完后执行 gulp -v查看是否安装  进入博客项目根">
+<meta name="twitter:image" content="https://i.loli.net/2019/07/28/5d3d611d3351988178.png">
 
 
 
@@ -123,7 +125,7 @@
 
   
   
-  <link rel="canonical" href="https://blon.club/2019/07/27/Java-字符串概述及比较/">
+  <link rel="canonical" href="https://blon.club/2019/07/28/利用Gulp压缩Hexo博客/">
 
 
 
@@ -134,7 +136,7 @@
 </script>
 
   
-  <title>Java 字符串概述及比较 | 村长ABC</title>
+  <title>利用Gulp压缩Hexo博客 | 村长ABC</title>
   
 
 
@@ -375,7 +377,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blon.club/2019/07/27/Java-字符串概述及比较/">
+    <link itemprop="mainEntityOfPage" href="https://blon.club/2019/07/28/利用Gulp压缩Hexo博客/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="村长ABC">
@@ -392,7 +394,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Java 字符串概述及比较
+          <h1 class="post-title" itemprop="name headline">利用Gulp压缩Hexo博客
 
               
             
@@ -418,7 +420,7 @@
                 
               
 
-              <time title="创建时间：2019-07-27 18:02:17 / 修改时间：18:12:05" itemprop="dateCreated datePublished" datetime="2019-07-27T18:02:17+08:00">2019-07-27</time>
+              <time title="创建时间：2019-07-28 16:27:22 / 修改时间：17:15:06" itemprop="dateCreated datePublished" datetime="2019-07-28T16:27:22+08:00">2019-07-28</time>
             </span>
           
 
@@ -437,7 +439,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a></span>
 
                 
                 
@@ -455,8 +457,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/07/27/Java-字符串概述及比较/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/27/Java-字符串概述及比较/" itemprop="commentCount"></span>
+                <a href="/2019/07/28/利用Gulp压缩Hexo博客/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/28/利用Gulp压缩Hexo博客/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -486,7 +488,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span title="本文字数">1.8k</span>
+              <span title="本文字数">6.4k</span>
             </span>
           
 
@@ -498,7 +500,7 @@
               
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
               
-              <span title="阅读时长">2 分钟</span>
+              <span title="阅读时长">6 分钟</span>
             </span>
           
 
@@ -517,72 +519,158 @@
       
 
       
-        <h6 id="String类概述"><a href="#String类概述" class="headerlink" title="String类概述"></a>String类概述</h6><p>包路径：<strong>java.lang.String</strong></p>
-<p>api当中说：Java 程序中的所有字符串字面值（如 <code>&quot;abc&quot;</code> ）都作为此类的实例实现。其实是说：程序当中所有双引号字符串都是String对象，即使没有new也是。</p>
-<h6 id="字符串的特点"><a href="#字符串的特点" class="headerlink" title="字符串的特点"></a>字符串的特点</h6><ul>
-<li><strong>字符串的内容永不可变</strong></li>
-<li>正是因为字符串不可改变所以字符串可以共享使用</li>
-<li>字符串效果相当于char [] 字符数组，但底层原理是byte [] 字节数组</li>
-</ul>
-<h6 id="创建字符串常见的3-1种方式"><a href="#创建字符串常见的3-1种方式" class="headerlink" title="创建字符串常见的3+1种方式"></a>创建字符串常见的3+1种方式</h6><ol>
-<li><p>三种构造方法</p>
-<ol>
-<li>public String (); 创建一个空白字符串，不含有任何内容</li>
-<li>public String (char [] array); 根据char字符数组来创建字符串</li>
-<li>public String (byte [] array); 根据byte字节数组来创建字符串</li>
-</ol>
-</li>
-<li><p>一种直接创建</p>
-<p>String str = “hello”;</p>
-</li>
-</ol>
-<h6 id="代码实例"><a href="#代码实例" class="headerlink" title="代码实例"></a>代码实例</h6><pre><code class="line-numbers language-java">        //空参构造
-        String str = new String();
-        System.out.println(&quot;第一个字符串：&quot; + str);
+        <h6 id="1-全局安装-Gulp"><a href="#1-全局安装-Gulp" class="headerlink" title="1.全局安装 Gulp"></a>1.全局安装 Gulp</h6><pre><code>npm install --global gulp</code></pre><p>上面那条命令基本上废了，很慢，而且还各种报错，失败了n次了。安装失败的可以用下面这条命令</p>
+<pre><code>sudo cnpm install --global gulp</code></pre><p>如果是windows系统，以管理员方式打开cmd 执行下面的命令</p>
+<pre><code>cnpm install --global gulp</code></pre><p>安装完后执行 <code>gulp -v</code>查看是否安装</p>
+<p><img src="https://i.loli.net/2019/07/28/5d3d611d3351988178.png" alt="5d3d611d3351988178"></p>
+<p>进入博客项目根目录，执行下面这条命令，安装gulp插件</p>
+<pre><code>npm i gulp gulp-htmlclean gulp-htmlmin gulp-imagemin gulp-minify-css gulp-uglify --save</code></pre><h6 id="2-创建-gulpfile-js-文件"><a href="#2-创建-gulpfile-js-文件" class="headerlink" title="2.创建 gulpfile.js 文件"></a>2.创建 gulpfile.js 文件</h6><p>同样是在博客项目根目录下，创建gulpfile.js文件，将一下代码拷贝到该文件</p>
+<pre><code>var gulp        = require(&#39;gulp&#39;);
+var debug       = require(&#39;gulp-debug&#39;);
+var cleancss    = require(&#39;gulp-clean-css&#39;); //css压缩组件
+var uglify      = require(&#39;gulp-uglify&#39;);    //js压缩组件
+var htmlmin     = require(&#39;gulp-htmlmin&#39;);   //html压缩组件
+var htmlclean   = require(&#39;gulp-htmlclean&#39;); //html清理组件
+var imagemin    = require(&#39;gulp-imagemin&#39;);  //图片压缩组件
+var changed     = require(&#39;gulp-changed&#39;);   //文件更改校验组件
+var gulpif      = require(&#39;gulp-if&#39;)         //任务 帮助调用组件
+var plumber     = require(&#39;gulp-plumber&#39;);   //容错组件（发生错误不跳出任务，并报出错误内容）
+var runSequence = require(&#39;run-sequence&#39;);   //异步执行组件
+var isScriptAll = true;  //是否处理所有文件，(true|处理所有文件)(false|只处理有更改的文件)
+var isDebug     = true;  //是否调试显示 编译通过的文件
+var del         = require(&#39;del&#39;);
+var Hexo        = require(&#39;hexo&#39;);
+var hexo        = new Hexo(process.cwd(), {}); // 初始化一个hexo对象
 
-        //使用字符数组来创建字符串
-        char [] charArr = {&#39;A&#39;,&#39;B&#39;,&#39;C&#39;} ;
-        String str2 = new String(charArr) ;
-        System.out.println(&quot;第二个字符串：&quot; + str2);
+// 清除public文件夹
+gulp.task(&#39;clean&#39;, function() {
+    return del([&#39;public/**/*&#39;]);
+});
 
-        //使用byte数组来创建字符串
-        byte [] bytrArr = {97,98,99};
-        String str3 = new String(bytrArr) ;
-        System.out.println(&quot;第二个字符串：&quot;+str3);
+// 下面几个跟hexo有关的操作，主要通过hexo.call()去执行，注意return
 
-        //直接创建
-        String s = &quot;hello&quot;;
-        System.out.println(s);</code></pre>
-<h6 id="字符串的内容比较"><a href="#字符串的内容比较" class="headerlink" title="字符串的内容比较"></a>字符串的内容比较</h6><p>==是进行对象的地址值比较，如果需要字符串的内容比较，有如下两种方法</p>
-<p>1、public boolean equals(Object obj) 参数可以是任何类型，只有参数是一个字符串并且内容相同时才会是true 否则为false</p>
-<p>2、equalsIgnoreCase方法，不区分大小写</p>
-<pre><code class="line-numbers language-java">/*
-  方法一
-  格式
-  参数1.equals(参数2)
-  该方法严格区分大小写
-  */
-        String str1 = &quot;ABC&quot;;
-        String str2 = &quot;ABC&quot;;
-        //两个变量比较
+// 创建静态页面 （等同 hexo generate）
+gulp.task(&#39;generate&#39;, function() {
+    return hexo.init().then(function() {
+        return hexo.call(&#39;generate&#39;, {
+            watch: false
+        }).then(function() {
+            return hexo.exit();
+        }).catch(function(err) {
+            return hexo.exit(err);
+        });
+    });
+});
 
-        System.out.println(str1.equals(str2));
-        //变量和常量比较
-        System.out.println(str1.equals(&quot;hello&quot;));
-        //常量与常量比较
-        System.out.println(&quot;hello&quot;.equals(&quot;hello&quot;));
-  /*方法二
-  格式
-  参数1.equalsIgnoreCase(参数2)
-  该方法不区分大小写（英文）
-  */
-       System.out.println(str1.equalsIgnoreCase(&quot;abc&quot;));</code></pre>
-<h6 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h6><p>1、任何对象都可以用Object 来接收</p>
-<p>2、equals方法具有对称性 a.equals(b) 和 b.equals(a) 效果一样</p>
-<p>3、如果比较双方一个是常量字符串一个是变量字符串 ，推荐把常量放在前面，变量放在后面，</p>
-<pre><code class="line-numbers language-java">&quot;ABC&quot;.equals(str1) //推荐        
-str1.equals(&quot;ABC&quot;) //不推荐</code></pre>
+// 启动Hexo服务器
+gulp.task(&#39;server&#39;,  function() {
+    return hexo.init().then(function() {
+        return hexo.call(&#39;server&#39;, {});
+    }).catch(function(err) {
+        console.log(err);
+    });
+});
 
+// 部署到服务器
+gulp.task(&#39;deploy&#39;, function() {
+    return hexo.init().then(function() {
+        return hexo.call(&#39;deploy&#39;, {
+            watch: false
+        }).then(function() {
+            return hexo.exit();
+        }).catch(function(err) {
+            return hexo.exit(err);
+        });
+    });
+});
+
+// 压缩public目录下的js文件
+gulp.task(&#39;compressJs&#39;, function () {
+    var option = {
+        // preserveComments: &#39;all&#39;,//保留所有注释
+        mangle: true,           //类型：Boolean 默认：true 是否修改变量名
+        compress: true          //类型：Boolean 默认：true 是否完全压缩
+    }
+    return gulp.src([&#39;./public/**/*.js&#39;,&#39;!./public/**/*.min.js&#39;])  //排除的js
+        .pipe(gulpif(!isScriptAll, changed(&#39;./public&#39;)))
+        .pipe(gulpif(isDebug,debug({title: &#39;Compress JS:&#39;})))
+        .pipe(plumber())
+        .pipe(uglify(option))                //调用压缩组件方法uglify(),对合并的文件进行压缩
+        .pipe(gulp.dest(&#39;./public&#39;));         //输出到目标目录
+});
+
+// 压缩public目录下的css文件
+gulp.task(&#39;compressCss&#39;, function () {
+    var option = {
+        rebase: false,
+        //advanced: true,               //类型：Boolean 默认：true [是否开启高级优化（合并选择器等）]
+        compatibility: &#39;ie7&#39;,         //保留ie7及以下兼容写法 类型：String 默认：&#39;&#39;or&#39;*&#39; [启用兼容模式； &#39;ie7&#39;：IE7兼容模式，&#39;ie8&#39;：IE8兼容模式，&#39;*&#39;：IE9+兼容模式]
+        //keepBreaks: true,             //类型：Boolean 默认：false [是否保留换行]
+        //keepSpecialComments: &#39;*&#39;      //保留所有特殊前缀 当你用autoprefixer生成的浏览器前缀，如果不加这个参数，有可能将会删除你的部分前缀
+    }
+    return gulp.src([&#39;./public/**/*.css&#39;,&#39;!./public/**/*.min.css&#39;])  //排除的css
+        .pipe(gulpif(!isScriptAll, changed(&#39;./public&#39;)))
+        .pipe(gulpif(isDebug,debug({title: &#39;Compress CSS:&#39;})))
+        .pipe(plumber())
+        .pipe(cleancss(option))
+        .pipe(gulp.dest(&#39;./public&#39;));
+});
+
+// 压缩public目录下的html文件
+gulp.task(&#39;compressHtml&#39;, function () {
+    var cleanOptions = {
+        protect: /&lt;\!--%fooTemplate\b.*?%--&gt;/g,             //忽略处理
+        unprotect: /&lt;script [^&gt;]*\btype=&quot;text\/x-handlebars-template&quot;[\s\S]+?&lt;\/script&gt;/ig //特殊处理
+    }
+    var minOption = {
+        collapseWhitespace: true,           //压缩HTML
+        collapseBooleanAttributes: true,    //省略布尔属性的值  &lt;input checked=&quot;true&quot;/&gt; ==&gt; &lt;input /&gt;
+        removeEmptyAttributes: true,        //删除所有空格作属性值    &lt;input id=&quot;&quot; /&gt; ==&gt; &lt;input /&gt;
+        removeScriptTypeAttributes: true,   //删除&lt;script&gt;的type=&quot;text/javascript&quot;
+        removeStyleLinkTypeAttributes: true,//删除&lt;style&gt;和&lt;link&gt;的type=&quot;text/css&quot;
+        removeComments: true,               //清除HTML注释
+        minifyJS: true,                     //压缩页面JS
+        minifyCSS: true,                    //压缩页面CSS
+        minifyURLs: true                    //替换页面URL
+    };
+    return gulp.src(&#39;./public/**/*.html&#39;)
+        .pipe(gulpif(isDebug,debug({title: &#39;Compress HTML:&#39;})))
+        .pipe(plumber())
+        .pipe(htmlclean(cleanOptions))
+        .pipe(htmlmin(minOption))
+        .pipe(gulp.dest(&#39;./public&#39;));
+});
+
+// 压缩 public/uploads 目录内图片
+gulp.task(&#39;compressImage&#39;, function() {
+    var option = {
+        optimizationLevel: 5, //类型：Number  默认：3  取值范围：0-7（优化等级）
+        progressive: true,    //类型：Boolean 默认：false 无损压缩jpg图片
+        interlaced: false,    //类型：Boolean 默认：false 隔行扫描gif进行渲染
+        multipass: false      //类型：Boolean 默认：false 多次优化svg直到完全优化
+    }
+    return gulp.src(&#39;./public/uploads/**/*.*&#39;)
+        .pipe(gulpif(!isScriptAll, changed(&#39;./public/uploads&#39;)))
+        .pipe(gulpif(isDebug,debug({title: &#39;Compress Images:&#39;})))
+        .pipe(plumber())
+        .pipe(imagemin(option))
+        .pipe(gulp.dest(&#39;./public/uploads&#39;));
+});
+
+// 用run-sequence并发执行，同时处理html，css，js，img
+gulp.task(&#39;compress&#39;, function(cb) {
+    runSequence.options.ignoreUndefinedTasks = true;
+    runSequence([&#39;compressHtml&#39;, &#39;compressCss&#39;, &#39;compressJs&#39;],cb);
+});
+
+// 执行顺序： 清除public目录 -&gt; 产生原始博客内容 -&gt; 执行压缩混淆 -&gt; 部署到服务器
+gulp.task(&#39;build&#39;, function(cb) {
+    runSequence.options.ignoreUndefinedTasks = true;
+    runSequence(&#39;clean&#39;, &#39;generate&#39;, &#39;compress&#39;, &#39;deploy&#39;, cb);
+});
+
+// 默认任务
+gulp.task(&#39;default&#39;, []);</code></pre>
       
     </div>
 
@@ -653,7 +741,7 @@ str1.equals(&quot;ABC&quot;) //不推荐</code></pre>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://blon.club/2019/07/27/Java-字符串概述及比较/" title="Java 字符串概述及比较">https://blon.club/2019/07/27/Java-字符串概述及比较/</a>
+    <a href="https://blon.club/2019/07/28/利用Gulp压缩Hexo博客/" title="利用Gulp压缩Hexo博客">https://blon.club/2019/07/28/利用Gulp压缩Hexo博客/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -679,7 +767,7 @@ str1.equals(&quot;ABC&quot;) //不推荐</code></pre>
         
         <div class="post-tags">
           
-            <a href="/tags/java/" rel="tag"><i class="fa fa-tag"></i> java</a>
+            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
           
         </div>
       
@@ -692,8 +780,8 @@ str1.equals(&quot;ABC&quot;) //不推荐</code></pre>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/23/Java Random随机数/" rel="next" title="Java Random随机数">
-                <i class="fa fa-chevron-left"></i> Java Random随机数
+              <a href="/2019/07/27/Java-字符串概述及比较/" rel="next" title="Java 字符串概述及比较">
+                <i class="fa fa-chevron-left"></i> Java 字符串概述及比较
               </a>
             
           </div>
@@ -701,10 +789,6 @@ str1.equals(&quot;ABC&quot;) //不推荐</code></pre>
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/28/利用Gulp压缩Hexo博客/" rel="prev" title="利用Gulp压缩Hexo博客">
-                利用Gulp压缩Hexo博客 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -903,7 +987,7 @@ str1.equals(&quot;ABC&quot;) //不推荐</code></pre>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#String类概述"><span class="nav-number">1.</span> <span class="nav-text">String类概述</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#字符串的特点"><span class="nav-number">2.</span> <span class="nav-text">字符串的特点</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#创建字符串常见的3-1种方式"><span class="nav-number">3.</span> <span class="nav-text">创建字符串常见的3+1种方式</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#代码实例"><span class="nav-number">4.</span> <span class="nav-text">代码实例</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#字符串的内容比较"><span class="nav-number">5.</span> <span class="nav-text">字符串的内容比较</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#注意事项"><span class="nav-number">6.</span> <span class="nav-text">注意事项</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#1-全局安装-Gulp"><span class="nav-number">1.</span> <span class="nav-text">1.全局安装 Gulp</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-创建-gulpfile-js-文件"><span class="nav-number">2.</span> <span class="nav-text">2.创建 gulpfile.js 文件</span></a></li></ol></div>
             
 
           </div>
