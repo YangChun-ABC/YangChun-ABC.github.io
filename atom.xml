@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blon.club/"/>
-  <updated>2019-07-30T15:54:16.674Z</updated>
+  <updated>2019-07-31T16:04:05.917Z</updated>
   <id>https://blon.club/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java Math工具类</title>
+    <link href="https://blon.club/2019/07/31/Java-Math%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
+    <id>https://blon.club/2019/07/31/Java-Math工具类/</id>
+    <published>2019-07-31T10:10:09.000Z</published>
+    <updated>2019-07-31T16:04:05.917Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="java-lang-Math-是数学相关工具类，里面包含大量静态方法，完成与数学相关操作"><a href="#java-lang-Math-是数学相关工具类，里面包含大量静态方法，完成与数学相关操作" class="headerlink" title="java.lang.Math 是数学相关工具类，里面包含大量静态方法，完成与数学相关操作"></a><strong>java.lang.Math 是数学相关工具类，里面包含大量静态方法，完成与数学相关操作</strong></h5><h6 id="public-static-double-abs-double-a-获取绝对值"><a href="#public-static-double-abs-double-a-获取绝对值" class="headerlink" title="public static double abs(double a); 获取绝对值"></a>public static double <strong>abs</strong>(double a); 获取绝对值</h6><pre><code class="line-numbers language-java">public class DemoMath {    //获取绝对值    public static void main(String[] args) {        System.out.println(Math.abs(3.14));    //3.14        System.out.println(Math.abs(0));       //0        System.out.println(Math.abs(-3.14));   //3.14    }}</code></pre><h6 id="public-static-double-ceil-double-a-想上取整"><a href="#public-static-double-ceil-double-a-想上取整" class="headerlink" title="public static double ceil(double a) 想上取整"></a>public static double <strong>ceil</strong>(double a) 想上取整</h6><pre><code class="line-numbers language-java">        System.out.println(Math.ceil(3.9));    //4.0        System.out.println(Math.ceil(3.4));    //4.0        System.out.println(Math.ceil(3.0));    //3.0</code></pre><h6 id="public-static-double-floor-double-a-向下取整"><a href="#public-static-double-floor-double-a-向下取整" class="headerlink" title="public static double floor(double a) 向下取整"></a>public static double <strong>floor</strong>(double a) 向下取整</h6><pre><code class="line-numbers language-java">        System.out.println(Math.floor(20.4));    //20.4</code></pre><h6 id="public-static-int-round-float-a-四舍五入，返回值无小数点"><a href="#public-static-int-round-float-a-四舍五入，返回值无小数点" class="headerlink" title="public static int round(float a) 四舍五入，返回值无小数点"></a>public static int <strong>round</strong>(float a) 四舍五入，返回值无小数点</h6><pre><code class="line-numbers language-java">        System.out.println(Math.round(15.3));    //15        System.out.println(Math.round(16.5));    //17</code></pre><h6 id="public-static-final-double-PI-近似圆周率常量"><a href="#public-static-final-double-PI-近似圆周率常量" class="headerlink" title="public static final double PI 近似圆周率常量"></a>public static final double <strong>PI</strong> 近似圆周率常量</h6><pre><code class="line-numbers language-java">//计算园面积 int a = 5    //半径System.out.println(Math.PI * (a * a ));    //78.53981633974483</code></pre><h6 id="小练习"><a href="#小练习" class="headerlink" title="小练习"></a>小练习</h6><p>计算 -10.8到5.9之间绝对值大于6，或是小于2.1的整数个数，</p><p>分析一下<br><img src="https://i.loli.net/2019/08/01/5d41bb2f81cc580542.png" alt="图例"></p><pre><code class="line-numbers language-java">/* 计算 -10.8到5.9之间绝对值大于6，或是小于2.1的整数个数 */ public static void main(String[] args) {        int i = 0;    //计数器        double min = -10.8;        double max = 5.9;        for (double d =Math.ceil(min) ; d &lt; max; d++) { //向上取整，        //初次之外还可以强转成int类型，舍弃小数位        //for (int  d =(int)min ; d &lt; max; d++) {            if (Math.abs(d) &gt; 6 || Math.abs(d) &lt; 2.1) {                i++;                //System.out.println((Math.abs(d));                System.out.println((int)Math.abs(d));    //强转成int类型打印Math.abs(d)            }        }        System.out.println(i);    //9    }</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;java-lang-Math-是数学相关工具类，里面包含大量静态方法，完成与数学相关操作&quot;&gt;&lt;a href=&quot;#java-lang-Math-是数学相关工具类，里面包含大量静态方法，完成与数学相关操作&quot; class=&quot;headerlink&quot; title=&quot;java
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://blon.club/categories/java/"/>
+    
+    
+      <category term="java" scheme="https://blon.club/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>Java Arrays工具类</title>
