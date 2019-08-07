@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blon.club/"/>
-  <updated>2019-07-31T16:04:05.917Z</updated>
+  <updated>2019-08-07T15:02:44.176Z</updated>
   <id>https://blon.club/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>估值一个亿的AI源代码</title>
+    <link href="https://blon.club/2019/08/07/%E4%BC%B0%E5%80%BC%E4%B8%80%E4%B8%AA%E4%BA%BF%E7%9A%84AI%E6%BA%90%E4%BB%A3%E7%A0%81/"/>
+    <id>https://blon.club/2019/08/07/估值一个亿的AI源代码/</id>
+    <published>2019-08-07T15:00:33.000Z</published>
+    <updated>2019-08-07T15:02:44.176Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="估值一个亿的AI源代码"><a href="#估值一个亿的AI源代码" class="headerlink" title="估值一个亿的AI源代码"></a><strong>估值一个亿的AI源代码</strong></h4><pre><code class="line-numbers language-java">public class Ai {    public static void main(String[] args) {        Scanner sca = new Scanner(System.in);        System.out.println(&quot;你好，请问需要什么帮助？&quot;);        String str;        while (true) {            str = sca.next();            str = str.replace(&quot;吗&quot;, &quot;&quot;);            str = str.replace(&quot;?&quot;, &quot;!&quot;);            str = str.replace(&quot;？&quot;, &quot;！&quot;);            System.out.println(str);        }    }}</code></pre><p><img src="https://i.loli.net/2019/08/07/CE9NHWLaUP1dDgQ.png" alt="CE9NHWLaUP1dDgQ"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;估值一个亿的AI源代码&quot;&gt;&lt;a href=&quot;#估值一个亿的AI源代码&quot; class=&quot;headerlink&quot; title=&quot;估值一个亿的AI源代码&quot;&gt;&lt;/a&gt;&lt;strong&gt;估值一个亿的AI源代码&lt;/strong&gt;&lt;/h4&gt;&lt;pre&gt;&lt;code class=&quot;li
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://blon.club/categories/java/"/>
+    
+    
+      <category term="java" scheme="https://blon.club/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>Java Math工具类</title>
