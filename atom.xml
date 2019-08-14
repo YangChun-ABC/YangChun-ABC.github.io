@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blon.club/"/>
-  <updated>2019-08-07T15:02:44.176Z</updated>
+  <updated>2019-08-14T16:03:07.366Z</updated>
   <id>https://blon.club/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java 继承</title>
+    <link href="https://blon.club/2019/08/14/Java-%E7%BB%A7%E6%89%BF/"/>
+    <id>https://blon.club/2019/08/14/Java-继承/</id>
+    <published>2019-08-14T15:59:16.000Z</published>
+    <updated>2019-08-14T16:03:07.366Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="继承中成员变量访问特点"><a href="#继承中成员变量访问特点" class="headerlink" title="继承中成员变量访问特点"></a>继承中成员变量访问特点</h5><p>创建父类</p><pre><code class="line-numbers language-java">public class fu{...}</code></pre><p>创建子类</p><pre><code class="line-numbers language-java">public　class zi extends fu{...}</code></pre><p>在父子继承关系中，如果成员变量重名，那么创建子类对象是有两种访问方法</p><ul><li><p>直接访问 通过子类对象访问成员变量</p><p>规则：就近原则，等号左边是谁就优先用谁 没有则向上找</p><pre><code class="line-numbers language-java">zi z = new zi();//等号左边是子类，则用子类的成员变量 i        System.out.println(z.i);</code></pre></li><li><p>间接访问 通过成员方法访问成员变量</p><p>规则：该方法属于谁就优先用谁</p></li></ul><p><strong>三种变量重名</strong></p><table><thead><tr><th>局部变量</th><th>直接写成变量名</th></tr></thead><tbody><tr><td><strong>本类的成员变量</strong></td><td><strong>this.成员变量名</strong></td></tr><tr><td><strong>父类的成员变量</strong></td><td><strong>super.成员变量名</strong></td></tr></tbody></table><h5 id="继承中成员方法访问特点"><a href="#继承中成员方法访问特点" class="headerlink" title="继承中成员方法访问特点"></a>继承中成员方法访问特点</h5><ul><li><p>在父子类继承关系中，创建子类对象，访问成员方法的规则</p><p>规则：创建的对象是谁，就优先用谁，没有则向上找 ，也就是说等号右边new了谁那就用谁</p></li></ul><p><strong>注意事项：无论是成员方法还是成员变量，如果没有都是向上找父类，绝对不会向下找子类</strong></p><h5 id="方法覆盖重写注意事项"><a href="#方法覆盖重写注意事项" class="headerlink" title="方法覆盖重写注意事项"></a>方法覆盖重写注意事项</h5><ul><li>必须保证父子类之间方法名称相同，参数列表也相同。<code>@Override</code>写在方法前面，这个注解用来检测是否正确的方法覆盖重写</li><li>子类方法的返回值必须<strong>小于等于</strong>父类方法返回值的范围</li><li>子类方法的权限必须<strong>大于等于</strong>父类的权限修饰符</li></ul><h5 id="继承中构造方法的访问特点"><a href="#继承中构造方法的访问特点" class="headerlink" title="继承中构造方法的访问特点"></a>继承中构造方法的访问特点</h5><ul><li>子类构造方法中有一个默认隐含的<code>super()</code>调用，所以一定是先调用父类构造后执行子类构造</li><li>子类构造通过super关键字来调用父类重载构造</li><li>super的父类构造必须使用，必须是子类构造方法的第一个语句，不能一个子类构造调用多次super构造</li></ul><p><strong>总结</strong>：子类必须调用父类构造方法，不写则赠送super()；写了则使用指定的super 调用，super只能有一个，还必须是第一个</p><pre><code class="line-numbers language-java">//创建父类public class Fu {    public Fu() { //父类无参构造        System.out.println(&quot;父类构造&quot;);    }}</code></pre><pre><code class="line-numbers language-java">//创建子类public class zi extends Fu {    public zi() {        System.out.println(&quot;子类构造&quot;);    }}</code></pre><pre><code class="line-numbers language-java">public class Main {    public static void main(String[] args) {        zi z = new zi();    }}</code></pre><p>super的三种使用方法</p><ol start="2"><li><p>子类成员方法中访问父类的成员变量</p><pre><code class="line-numbers language-java">super.成员变量名;</code></pre></li><li><p>子类成员方法方法访问父类成员方法</p><pre><code class="line-numbers language-java">super.父类成员方法名;</code></pre></li><li><p>子类构造方法访问父类构造方法</p><pre><code class="line-numbers language-java">public zi(){    super();     //不写也可以，默认赠送}</code></pre></li></ol><p><strong>代码实例</strong></p><pre><code class="line-numbers language-java">//创建父类public class Fu {    int i = 10;    public void method(){        System.out.println(&quot;父类方法&quot;);    }}</code></pre><pre><code class="line-numbers language-java">//创建子类public class zi extends Fu{    int i = 20;}public void Main(){    int i = 30;    System.out.println(i);    //局部变量    System.out.printrn(this.i); //本类成员变量    System.out.println(super.i);//父类成员变量} public void method(){         super.method(); //访问父类的成员方法        System.out.println(&quot;父类方法&quot;);    }</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;继承中成员变量访问特点&quot;&gt;&lt;a href=&quot;#继承中成员变量访问特点&quot; class=&quot;headerlink&quot; title=&quot;继承中成员变量访问特点&quot;&gt;&lt;/a&gt;继承中成员变量访问特点&lt;/h5&gt;&lt;p&gt;创建父类&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;line-nu
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://blon.club/categories/java/"/>
+    
+    
+      <category term="java" scheme="https://blon.club/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>估值一个亿的AI源代码</title>

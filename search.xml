@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Java 继承]]></title>
+    <url>%2F2019%2F08%2F14%2FJava-%E7%BB%A7%E6%89%BF%2F</url>
+    <content type="text"><![CDATA[继承中成员变量访问特点创建父类 public class fu{...} 创建子类 public class zi extends fu{...} 在父子继承关系中，如果成员变量重名，那么创建子类对象是有两种访问方法 直接访问 通过子类对象访问成员变量 规则：就近原则，等号左边是谁就优先用谁 没有则向上找 zi z = new zi();//等号左边是子类，则用子类的成员变量 i System.out.println(z.i); 间接访问 通过成员方法访问成员变量 规则：该方法属于谁就优先用谁 三种变量重名 局部变量 直接写成变量名 本类的成员变量 this.成员变量名 父类的成员变量 super.成员变量名 继承中成员方法访问特点 在父子类继承关系中，创建子类对象，访问成员方法的规则 规则：创建的对象是谁，就优先用谁，没有则向上找 ，也就是说等号右边new了谁那就用谁 注意事项：无论是成员方法还是成员变量，如果没有都是向上找父类，绝对不会向下找子类 方法覆盖重写注意事项 必须保证父子类之间方法名称相同，参数列表也相同。@Override写在方法前面，这个注解用来检测是否正确的方法覆盖重写 子类方法的返回值必须小于等于父类方法返回值的范围 子类方法的权限必须大于等于父类的权限修饰符 继承中构造方法的访问特点 子类构造方法中有一个默认隐含的super()调用，所以一定是先调用父类构造后执行子类构造 子类构造通过super关键字来调用父类重载构造 super的父类构造必须使用，必须是子类构造方法的第一个语句，不能一个子类构造调用多次super构造 总结：子类必须调用父类构造方法，不写则赠送super()；写了则使用指定的super 调用，super只能有一个，还必须是第一个 //创建父类 public class Fu { public Fu() { //父类无参构造 System.out.println(&quot;父类构造&quot;); } } //创建子类 public class zi extends Fu { public zi() { System.out.println(&quot;子类构造&quot;); } } public class Main { public static void main(String[] args) { zi z = new zi(); } } super的三种使用方法 子类成员方法中访问父类的成员变量 super.成员变量名; 子类成员方法方法访问父类成员方法 super.父类成员方法名; 子类构造方法访问父类构造方法 public zi(){ super(); //不写也可以，默认赠送 } 代码实例 //创建父类 public class Fu { int i = 10; public void method(){ System.out.println(&quot;父类方法&quot;); } } //创建子类 public class zi extends Fu{ int i = 20; } public void Main(){ int i = 30; System.out.println(i); //局部变量 System.out.printrn(this.i); //本类成员变量 System.out.println(super.i);//父类成员变量 } public void method(){ super.method(); //访问父类的成员方法 System.out.println(&quot;父类方法&quot;); }]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[估值一个亿的AI源代码]]></title>
     <url>%2F2019%2F08%2F07%2F%E4%BC%B0%E5%80%BC%E4%B8%80%E4%B8%AA%E4%BA%BF%E7%9A%84AI%E6%BA%90%E4%BB%A3%E7%A0%81%2F</url>
     <content type="text"><![CDATA[估值一个亿的AI源代码public class Ai { public static void main(String[] args) { Scanner sca = new Scanner(System.in); System.out.println(&quot;你好，请问需要什么帮助？&quot;); String str; while (true) { str = sca.next(); str = str.replace(&quot;吗&quot;, &quot;&quot;); str = str.replace(&quot;?&quot;, &quot;!&quot;); str = str.replace(&quot;？&quot;, &quot;！&quot;); System.out.println(str); } } }]]></content>
