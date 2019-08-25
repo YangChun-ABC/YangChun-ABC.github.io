@@ -3,11 +3,11 @@
   <title>村长ABC</title>
   
   <subtitle>孤独、是一种态度</subtitle>
-  <link href="/blog/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
-  <link href="https://gitee.com/Yangchun-ABC/blog/"/>
+  <link href="https://blon.club/"/>
   <updated>2019-08-14T16:03:07.366Z</updated>
-  <id>https://gitee.com/Yangchun-ABC/blog/</id>
+  <id>https://blon.club/</id>
   
   <author>
     <name>村长ABC</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Java 继承</title>
-    <link href="https://gitee.com/Yangchun-ABC/blog/2019/08/14/Java-%E7%BB%A7%E6%89%BF/"/>
-    <id>https://gitee.com/Yangchun-ABC/blog/2019/08/14/Java-继承/</id>
+    <link href="https://blon.club/2019/08/14/Java-%E7%BB%A7%E6%89%BF/"/>
+    <id>https://blon.club/2019/08/14/Java-继承/</id>
     <published>2019-08-14T15:59:16.000Z</published>
     <updated>2019-08-14T16:03:07.366Z</updated>
     
@@ -35,17 +35,17 @@
     
     </summary>
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/categories/java/"/>
+      <category term="java" scheme="https://blon.club/categories/java/"/>
     
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/tags/java/"/>
+      <category term="java" scheme="https://blon.club/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>估值一个亿的AI源代码</title>
-    <link href="https://gitee.com/Yangchun-ABC/blog/2019/08/07/%E4%BC%B0%E5%80%BC%E4%B8%80%E4%B8%AA%E4%BA%BF%E7%9A%84AI%E6%BA%90%E4%BB%A3%E7%A0%81/"/>
-    <id>https://gitee.com/Yangchun-ABC/blog/2019/08/07/估值一个亿的AI源代码/</id>
+    <link href="https://blon.club/2019/08/07/%E4%BC%B0%E5%80%BC%E4%B8%80%E4%B8%AA%E4%BA%BF%E7%9A%84AI%E6%BA%90%E4%BB%A3%E7%A0%81/"/>
+    <id>https://blon.club/2019/08/07/估值一个亿的AI源代码/</id>
     <published>2019-08-07T15:00:33.000Z</published>
     <updated>2019-08-07T15:02:44.176Z</updated>
     
@@ -60,17 +60,17 @@
     
     </summary>
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/categories/java/"/>
+      <category term="java" scheme="https://blon.club/categories/java/"/>
     
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/tags/java/"/>
+      <category term="java" scheme="https://blon.club/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>Java Math工具类</title>
-    <link href="https://gitee.com/Yangchun-ABC/blog/2019/07/31/Java-Math%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
-    <id>https://gitee.com/Yangchun-ABC/blog/2019/07/31/Java-Math工具类/</id>
+    <link href="https://blon.club/2019/07/31/Java-Math%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
+    <id>https://blon.club/2019/07/31/Java-Math工具类/</id>
     <published>2019-07-31T10:10:09.000Z</published>
     <updated>2019-07-31T16:04:05.917Z</updated>
     
@@ -85,17 +85,17 @@
     
     </summary>
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/categories/java/"/>
+      <category term="java" scheme="https://blon.club/categories/java/"/>
     
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/tags/java/"/>
+      <category term="java" scheme="https://blon.club/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>Java Arrays工具类</title>
-    <link href="https://gitee.com/Yangchun-ABC/blog/2019/07/30/Java-Arrays%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
-    <id>https://gitee.com/Yangchun-ABC/blog/2019/07/30/Java-Arrays工具类/</id>
+    <link href="https://blon.club/2019/07/30/Java-Arrays%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
+    <id>https://blon.club/2019/07/30/Java-Arrays工具类/</id>
     <published>2019-07-30T14:50:33.000Z</published>
     <updated>2019-07-30T15:54:16.674Z</updated>
     
@@ -112,17 +112,17 @@ public class Arrays(将数组按变成字符串，格式 [元素1，元素2，�
     
     </summary>
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/categories/java/"/>
+      <category term="java" scheme="https://blon.club/categories/java/"/>
     
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/tags/java/"/>
+      <category term="java" scheme="https://blon.club/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>Java 字符串常用方法</title>
-    <link href="https://gitee.com/Yangchun-ABC/blog/2019/07/29/Java%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/"/>
-    <id>https://gitee.com/Yangchun-ABC/blog/2019/07/29/Java 字符串常用方法/</id>
+    <link href="https://blon.club/2019/07/29/Java%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/"/>
+    <id>https://blon.club/2019/07/29/Java 字符串常用方法/</id>
     <published>2019-07-28T16:13:04.000Z</published>
     <updated>2019-08-09T15:15:42.956Z</updated>
     
@@ -138,17 +138,17 @@ public class Arrays(将数组按变成字符串，格式 [元素1，元素2，�
     
     </summary>
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/categories/java/"/>
+      <category term="java" scheme="https://blon.club/categories/java/"/>
     
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/tags/java/"/>
+      <category term="java" scheme="https://blon.club/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>利用Gulp压缩Hexo博客</title>
-    <link href="https://gitee.com/Yangchun-ABC/blog/2019/07/28/%E5%88%A9%E7%94%A8Gulp%E5%8E%8B%E7%BC%A9Hexo%E5%8D%9A%E5%AE%A2/"/>
-    <id>https://gitee.com/Yangchun-ABC/blog/2019/07/28/利用Gulp压缩Hexo博客/</id>
+    <link href="https://blon.club/2019/07/28/%E5%88%A9%E7%94%A8Gulp%E5%8E%8B%E7%BC%A9Hexo%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://blon.club/2019/07/28/利用Gulp压缩Hexo博客/</id>
     <published>2019-07-28T08:27:22.000Z</published>
     <updated>2019-07-30T15:57:44.843Z</updated>
     
@@ -163,17 +163,17 @@ public class Arrays(将数组按变成字符串，格式 [元素1，元素2，�
     
     </summary>
     
-      <category term="hexo" scheme="https://gitee.com/Yangchun-ABC/blog/categories/hexo/"/>
+      <category term="hexo" scheme="https://blon.club/categories/hexo/"/>
     
     
-      <category term="hexo" scheme="https://gitee.com/Yangchun-ABC/blog/tags/hexo/"/>
+      <category term="hexo" scheme="https://blon.club/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Java 字符串概述及比较</title>
-    <link href="https://gitee.com/Yangchun-ABC/blog/2019/07/27/Java-%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A6%82%E8%BF%B0%E5%8F%8A%E6%AF%94%E8%BE%83/"/>
-    <id>https://gitee.com/Yangchun-ABC/blog/2019/07/27/Java-字符串概述及比较/</id>
+    <link href="https://blon.club/2019/07/27/Java-%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A6%82%E8%BF%B0%E5%8F%8A%E6%AF%94%E8%BE%83/"/>
+    <id>https://blon.club/2019/07/27/Java-字符串概述及比较/</id>
     <published>2019-07-27T10:02:17.000Z</published>
     <updated>2019-07-27T10:12:05.571Z</updated>
     
@@ -189,17 +189,17 @@ public class Arrays(将数组按变成字符串，格式 [元素1，元素2，�
     
     </summary>
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/categories/java/"/>
+      <category term="java" scheme="https://blon.club/categories/java/"/>
     
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/tags/java/"/>
+      <category term="java" scheme="https://blon.club/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>Java Random随机数</title>
-    <link href="https://gitee.com/Yangchun-ABC/blog/2019/07/23/Java%20Random%E9%9A%8F%E6%9C%BA%E6%95%B0/"/>
-    <id>https://gitee.com/Yangchun-ABC/blog/2019/07/23/Java Random随机数/</id>
+    <link href="https://blon.club/2019/07/23/Java%20Random%E9%9A%8F%E6%9C%BA%E6%95%B0/"/>
+    <id>https://blon.club/2019/07/23/Java Random随机数/</id>
     <published>2019-07-23T13:25:33.000Z</published>
     <updated>2019-07-23T14:12:21.776Z</updated>
     
@@ -221,17 +221,17 @@ public class Arrays(将数组按变成字符串，格式 [元素1，元素2，�
     
     </summary>
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/categories/java/"/>
+      <category term="java" scheme="https://blon.club/categories/java/"/>
     
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/tags/java/"/>
+      <category term="java" scheme="https://blon.club/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>Java ArrayList集合</title>
-    <link href="https://gitee.com/Yangchun-ABC/blog/2019/07/23/Java-ArrayList%E9%9B%86%E5%90%88/"/>
-    <id>https://gitee.com/Yangchun-ABC/blog/2019/07/23/Java-ArrayList集合/</id>
+    <link href="https://blon.club/2019/07/23/Java-ArrayList%E9%9B%86%E5%90%88/"/>
+    <id>https://blon.club/2019/07/23/Java-ArrayList集合/</id>
     <published>2019-07-23T13:25:33.000Z</published>
     <updated>2019-07-30T14:52:48.630Z</updated>
     
@@ -249,17 +249,17 @@ public class Arrays(将数组按变成字符串，格式 [元素1，元素2，�
     
     </summary>
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/categories/java/"/>
+      <category term="java" scheme="https://blon.club/categories/java/"/>
     
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/tags/java/"/>
+      <category term="java" scheme="https://blon.club/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>Java 匿名对象概述</title>
-    <link href="https://gitee.com/Yangchun-ABC/blog/2019/07/23/Java%20%E5%8C%BF%E5%90%8D%E5%AF%B9%E8%B1%A1%E6%A6%82%E8%BF%B0/"/>
-    <id>https://gitee.com/Yangchun-ABC/blog/2019/07/23/Java 匿名对象概述/</id>
+    <link href="https://blon.club/2019/07/23/Java%20%E5%8C%BF%E5%90%8D%E5%AF%B9%E8%B1%A1%E6%A6%82%E8%BF%B0/"/>
+    <id>https://blon.club/2019/07/23/Java 匿名对象概述/</id>
     <published>2019-07-23T08:25:17.000Z</published>
     <updated>2019-07-23T10:17:59.920Z</updated>
     
@@ -278,17 +278,17 @@ public class Arrays(将数组按变成字符串，格式 [元素1，元素2，�
     
     </summary>
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/categories/java/"/>
+      <category term="java" scheme="https://blon.club/categories/java/"/>
     
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/tags/java/"/>
+      <category term="java" scheme="https://blon.club/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>Java 自增自减概述</title>
-    <link href="https://gitee.com/Yangchun-ABC/blog/2019/07/22/Java%20%E8%87%AA%E5%A2%9E%E8%87%AA%E5%87%8F%E6%A6%82%E8%BF%B0/"/>
-    <id>https://gitee.com/Yangchun-ABC/blog/2019/07/22/Java 自增自减概述/</id>
+    <link href="https://blon.club/2019/07/22/Java%20%E8%87%AA%E5%A2%9E%E8%87%AA%E5%87%8F%E6%A6%82%E8%BF%B0/"/>
+    <id>https://blon.club/2019/07/22/Java 自增自减概述/</id>
     <published>2019-07-22T07:27:17.000Z</published>
     <updated>2019-07-22T16:23:48.369Z</updated>
     
@@ -304,17 +304,17 @@ public class Arrays(将数组按变成字符串，格式 [元素1，元素2，�
     
     </summary>
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/categories/java/"/>
+      <category term="java" scheme="https://blon.club/categories/java/"/>
     
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/tags/java/"/>
+      <category term="java" scheme="https://blon.club/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>Java for循环奇偶数练习</title>
-    <link href="https://gitee.com/Yangchun-ABC/blog/2019/07/21/Java%20for%E5%BE%AA%E7%8E%AF%E5%A5%87%E5%81%B6%E6%95%B0%E7%BB%83%E4%B9%A0/"/>
-    <id>https://gitee.com/Yangchun-ABC/blog/2019/07/21/Java for循环奇偶数练习/</id>
+    <link href="https://blon.club/2019/07/21/Java%20for%E5%BE%AA%E7%8E%AF%E5%A5%87%E5%81%B6%E6%95%B0%E7%BB%83%E4%B9%A0/"/>
+    <id>https://blon.club/2019/07/21/Java for循环奇偶数练习/</id>
     <published>2019-07-21T07:01:18.000Z</published>
     <updated>2019-07-22T16:23:11.513Z</updated>
     
@@ -330,17 +330,17 @@ public class Arrays(将数组按变成字符串，格式 [元素1，元素2，�
     
     </summary>
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/categories/java/"/>
+      <category term="java" scheme="https://blon.club/categories/java/"/>
     
     
-      <category term="java" scheme="https://gitee.com/Yangchun-ABC/blog/tags/java/"/>
+      <category term="java" scheme="https://blon.club/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>Hexo Next博客搭建---入门篇</title>
-    <link href="https://gitee.com/Yangchun-ABC/blog/2019/07/19/Hexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E5%85%A5%E9%97%A8%E7%AF%87/"/>
-    <id>https://gitee.com/Yangchun-ABC/blog/2019/07/19/Hexo-Next博客搭建-入门篇/</id>
+    <link href="https://blon.club/2019/07/19/Hexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E5%85%A5%E9%97%A8%E7%AF%87/"/>
+    <id>https://blon.club/2019/07/19/Hexo-Next博客搭建-入门篇/</id>
     <published>2019-07-19T08:24:17.000Z</published>
     <updated>2019-07-19T06:18:00.000Z</updated>
     
@@ -355,17 +355,17 @@ public class Arrays(将数组按变成字符串，格式 [元素1，元素2，�
     
     </summary>
     
-      <category term="hexo" scheme="https://gitee.com/Yangchun-ABC/blog/categories/hexo/"/>
+      <category term="hexo" scheme="https://blon.club/categories/hexo/"/>
     
     
-      <category term="hexo" scheme="https://gitee.com/Yangchun-ABC/blog/tags/hexo/"/>
+      <category term="hexo" scheme="https://blon.club/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hexo Next博客搭建---修改底部标签样式</title>
-    <link href="https://gitee.com/Yangchun-ABC/blog/2019/07/18/Hexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E4%BF%AE%E6%94%B9%E5%BA%95%E9%83%A8%E6%A0%87%E7%AD%BE%E6%A0%B7%E5%BC%8F/"/>
-    <id>https://gitee.com/Yangchun-ABC/blog/2019/07/18/Hexo-Next博客搭建-修改底部标签样式/</id>
+    <link href="https://blon.club/2019/07/18/Hexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E4%BF%AE%E6%94%B9%E5%BA%95%E9%83%A8%E6%A0%87%E7%AD%BE%E6%A0%B7%E5%BC%8F/"/>
+    <id>https://blon.club/2019/07/18/Hexo-Next博客搭建-修改底部标签样式/</id>
     <published>2019-07-18T15:35:22.000Z</published>
     <updated>2019-07-18T15:41:50.000Z</updated>
     
@@ -381,17 +381,17 @@ public class Arrays(将数组按变成字符串，格式 [元素1，元素2，�
     
     </summary>
     
-      <category term="hexo" scheme="https://gitee.com/Yangchun-ABC/blog/categories/hexo/"/>
+      <category term="hexo" scheme="https://blon.club/categories/hexo/"/>
     
     
-      <category term="hexo" scheme="https://gitee.com/Yangchun-ABC/blog/tags/hexo/"/>
+      <category term="hexo" scheme="https://blon.club/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hexo Next博客搭建---文章结尾添加版权信息</title>
-    <link href="https://gitee.com/Yangchun-ABC/blog/2019/07/18/Hexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E6%96%87%E7%AB%A0%E7%BB%93%E5%B0%BE%E6%B7%BB%E5%8A%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/"/>
-    <id>https://gitee.com/Yangchun-ABC/blog/2019/07/18/Hexo-Next博客搭建-文章结尾添加版权信息/</id>
+    <link href="https://blon.club/2019/07/18/Hexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E6%96%87%E7%AB%A0%E7%BB%93%E5%B0%BE%E6%B7%BB%E5%8A%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF/"/>
+    <id>https://blon.club/2019/07/18/Hexo-Next博客搭建-文章结尾添加版权信息/</id>
     <published>2019-07-18T07:20:47.000Z</published>
     <updated>2019-07-18T15:10:08.000Z</updated>
     
@@ -407,17 +407,17 @@ public class Arrays(将数组按变成字符串，格式 [元素1，元素2，�
     
     </summary>
     
-      <category term="hexo" scheme="https://gitee.com/Yangchun-ABC/blog/categories/hexo/"/>
+      <category term="hexo" scheme="https://blon.club/categories/hexo/"/>
     
     
-      <category term="hexo" scheme="https://gitee.com/Yangchun-ABC/blog/tags/hexo/"/>
+      <category term="hexo" scheme="https://blon.club/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hexo Next博客搭建---文章后面添加结束语</title>
-    <link href="https://gitee.com/Yangchun-ABC/blog/2019/07/18/Hexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E6%96%87%E7%AB%A0%E5%90%8E%E9%9D%A2%E6%B7%BB%E5%8A%A0%E7%BB%93%E6%9D%9F%E8%AF%AD/"/>
-    <id>https://gitee.com/Yangchun-ABC/blog/2019/07/18/Hexo-Next博客搭建-文章后面添加结束语/</id>
+    <link href="https://blon.club/2019/07/18/Hexo-Next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E6%96%87%E7%AB%A0%E5%90%8E%E9%9D%A2%E6%B7%BB%E5%8A%A0%E7%BB%93%E6%9D%9F%E8%AF%AD/"/>
+    <id>https://blon.club/2019/07/18/Hexo-Next博客搭建-文章后面添加结束语/</id>
     <published>2019-07-18T06:43:21.000Z</published>
     <updated>2019-07-18T15:09:20.000Z</updated>
     
@@ -433,10 +433,10 @@ public class Arrays(将数组按变成字符串，格式 [元素1，元素2，�
     
     </summary>
     
-      <category term="hexo" scheme="https://gitee.com/Yangchun-ABC/blog/categories/hexo/"/>
+      <category term="hexo" scheme="https://blon.club/categories/hexo/"/>
     
     
-      <category term="hexo" scheme="https://gitee.com/Yangchun-ABC/blog/tags/hexo/"/>
+      <category term="hexo" scheme="https://blon.club/tags/hexo/"/>
     
   </entry>
   
