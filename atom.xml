@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blon.club/"/>
-  <updated>2019-08-14T16:03:07.366Z</updated>
+  <updated>2019-08-28T04:27:42.578Z</updated>
   <id>https://blon.club/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java 位(bit)运算</title>
+    <link href="https://blon.club/2019/08/28/Java-%E4%BD%8D-bit-%E8%BF%90%E7%AE%97/"/>
+    <id>https://blon.club/2019/08/28/Java-位-bit-运算/</id>
+    <published>2019-08-28T04:24:15.000Z</published>
+    <updated>2019-08-28T04:27:42.578Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="Java-位-bit-运算"><a href="#Java-位-bit-运算" class="headerlink" title="Java 位(bit)运算"></a>Java 位(bit)运算</h5><p><strong>&amp; 按位与    | 按位或    ^ 按位异或    ~ 按位取反    &lt;&lt; 按位左位移    &gt;&gt;按位右位移    &gt;&gt;&gt; 按位右位移（无符号）</strong></p><p>计算步骤</p><ol><li>将左右两边的值转换成二进制</li><li>竖着按照对应位置进行 &amp; | ^ 计算 （<strong>1 代表true    0 代表false</strong>）</li></ol><pre><code class="line-numbers language-Java">/* 位运算 3 &amp; 5 = ？？？   将值转换成二进制   3的二进制 00000011   5的二进制 00000101   --------------------               00000001    最终结果为 1 位运算 3 | 5 = ？？？   将值转换成二进制   3的二进制 00000011   5的二进制 00000101   --------------------               00000111    最终结果为 7位运算 3 ^ 5 = ？？？   异或两个值不一样就为true   将值转换成二进制   3的二进制 00000011   5的二进制 00000101   --------------------               00000110    最终结果为 6    */</code></pre><h6 id="原码、反码、补码"><a href="#原码、反码、补码" class="headerlink" title="原码、反码、补码"></a>原码、反码、补码</h6><ul><li>正数的三个码都是一样的         </li><li>负数二进制的第一位代表符号位，1 为负数   0为正数 </li><li>负数的反码保持符号位不动，其余取反</li><li>负数的补码在反码的基础上加1</li><li><strong>计算机中不管是正数还是负数，都是以补码的形式进行存储的</strong></li></ul><p>​                                    10                                                                         -10</p><p>原码 00000000 00000000 00000000 00001010    原码 10000000 00000000 00000000 00001010</p><p>反码 00000000 00000000 00000000 00001010    反码 11111111 11111111 11111111 00000101</p><p>补码 00000000 00000000 00000000 00001010    补码 11111111 11111111 11111111 00000110</p><h6 id="左位移-lt-lt"><a href="#左位移-lt-lt" class="headerlink" title="左位移 &lt;&lt;"></a>左位移 &lt;&lt;</h6><pre><code class="line-numbers language-java">10 &lt;&lt; 1 = ??    // 左位移 1 位     00000000 00000000 00000000 00001010    // 10的二进制     0000000 00000000 00000000 000010100    // 左位移1位，结尾处补上一个0     结果为：2010 &lt;&lt; 2 = ??    // 左位移 2 位     00000000 00000000 00000000 00001010    // 10的二进制     000000 00000000 00000000 0000101000    // 左位移1位，结尾处补上两个0     结果为：40     // 总结：往左位移相当于乘以2的位移次幂</code></pre><h6 id="右位移-gt-gt"><a href="#右位移-gt-gt" class="headerlink" title="右位移 &gt;&gt;"></a>右位移 &gt;&gt;</h6><pre><code class="line-numbers language-java">10 &gt;&gt; 1 = ??    // 右位移 1 位     00000000 00000000 00000000 00001010    // 10的二进制     000000000 00000000 00000000 0000101    // 右位移1位，头部添加一个0 结尾处删除一个0     结果为：5     // 总结 相当除于2的位移次幂</code></pre><h6 id="无符号右位移-gt-gt-gt"><a href="#无符号右位移-gt-gt-gt" class="headerlink" title="无符号右位移 &gt;&gt;&gt;"></a>无符号右位移 &gt;&gt;&gt;</h6><pre><code class="line-numbers language-java">-10 &gt;&gt;&gt; 1 = ??    11111111 11111111 11111111 00000110    011111111 11111111 11111111 0000011        // &gt;&gt;&gt;不保留符号位，填0就完事了   &gt;&gt;保留符号位，其余填1</code></pre><h5 id="amp-和-amp-amp-的区别"><a href="#amp-和-amp-amp-的区别" class="headerlink" title="&amp; 和 &amp;&amp; 的区别"></a>&amp; 和 &amp;&amp; 的区别</h5><ul><li>&amp; 可以视为逻辑运算，也可以视为位运算，&amp;&amp; 只能当做逻辑运算来用</li><li>如果两个符号都是逻辑运算符，那么 &amp; 两边都是true时，结果为true，反之为false</li><li>&amp;&amp; 短路与，正常情况下与 &amp; 结果一致，只有当前面为false时，才会发生短路，整体结果为false</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;Java-位-bit-运算&quot;&gt;&lt;a href=&quot;#Java-位-bit-运算&quot; class=&quot;headerlink&quot; title=&quot;Java 位(bit)运算&quot;&gt;&lt;/a&gt;Java 位(bit)运算&lt;/h5&gt;&lt;p&gt;&lt;strong&gt;&amp;amp; 按位与    | 按位或
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://blon.club/categories/java/"/>
+    
+    
+      <category term="java" scheme="https://blon.club/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>Java 继承</title>

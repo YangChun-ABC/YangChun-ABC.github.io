@@ -102,16 +102,18 @@
 <link rel="stylesheet" href="/js/prism/prism.css">
 
 
-  <meta name="description" content="愿你走出半生，归来仍是少年。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="村长ABC">
-<meta property="og:url" content="https://blon.club/archives/2019/07/index.html">
+  <meta name="description" content="Java 位(bit)运算&amp;amp; 按位与    | 按位或    ^ 按位异或    ~ 按位取反    &amp;lt;&amp;lt; 按位左位移    &amp;gt;&amp;gt;按位右位移    &amp;gt;&amp;gt;&amp;gt; 按位右位移（无符号） 计算步骤  将左右两边的值转换成二进制 竖着按照对应位置进行 &amp;amp; | ^ 计算 （1 代表true    0 代表false）  /* 位运算 3 &amp;amp; 5">
+<meta name="keywords" content="java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java 位(bit)运算">
+<meta property="og:url" content="https://blon.club/2019/08/28/Java-位-bit-运算/index.html">
 <meta property="og:site_name" content="村长ABC">
-<meta property="og:description" content="愿你走出半生，归来仍是少年。">
+<meta property="og:description" content="Java 位(bit)运算&amp;amp; 按位与    | 按位或    ^ 按位异或    ~ 按位取反    &amp;lt;&amp;lt; 按位左位移    &amp;gt;&amp;gt;按位右位移    &amp;gt;&amp;gt;&amp;gt; 按位右位移（无符号） 计算步骤  将左右两边的值转换成二进制 竖着按照对应位置进行 &amp;amp; | ^ 计算 （1 代表true    0 代表false）  /* 位运算 3 &amp;amp; 5">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-08-28T04:27:42.578Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="村长ABC">
-<meta name="twitter:description" content="愿你走出半生，归来仍是少年。">
+<meta name="twitter:title" content="Java 位(bit)运算">
+<meta name="twitter:description" content="Java 位(bit)运算&amp;amp; 按位与    | 按位或    ^ 按位异或    ~ 按位取反    &amp;lt;&amp;lt; 按位左位移    &amp;gt;&amp;gt;按位右位移    &amp;gt;&amp;gt;&amp;gt; 按位右位移（无符号） 计算步骤  将左右两边的值转换成二进制 竖着按照对应位置进行 &amp;amp; | ^ 计算 （1 代表true    0 代表false）  /* 位运算 3 &amp;amp; 5">
 
 
 
@@ -121,7 +123,7 @@
 
   
   
-  <link rel="canonical" href="https://blon.club/archives/2019/07/">
+  <link rel="canonical" href="https://blon.club/2019/08/28/Java-位-bit-运算/">
 
 
 
@@ -132,7 +134,7 @@
 </script>
 
   
-  <title>归档 | 村长ABC</title>
+  <title>Java 位(bit)运算 | 村长ABC</title>
   
 
 
@@ -180,7 +182,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/AllureLove520" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#70B7FD; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
@@ -287,7 +289,7 @@
         
         
           
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
 
     
     
@@ -353,423 +355,374 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blon.club/2019/08/28/Java-位-bit-运算/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="村长ABC">
+      <meta itemprop="description" content="愿你走出半生，归来仍是少年。">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="村长ABC">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">Java 位(bit)运算
+
+              
+            
+          </h1>
         
+
+        <div class="post-meta">
+
           
-        
-        嗯..! 目前共计 17 篇日志。 继续努力。
-      </span>
-      
-
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
+          
 
-        
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+              
+                
+              
 
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/07/31/Java-Math工具类/" itemprop="url">
+              <time title="创建时间：2019-08-28 12:24:15 / 修改时间：12:27:42" itemprop="dateCreated datePublished" datetime="2019-08-28T12:24:15+08:00">2019-08-28</time>
+            </span>
+          
+
+          
             
-              <span itemprop="name">Java Math工具类</span>
+
             
-          </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-31T18:10:09+08:00" content="2019-07-31">
-          07-31
-        </time>
-      </div>
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
 
-    </header>
-  </article>
+                
+                
+              
+            </span>
+          
 
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2019/08/28/Java-位-bit-运算/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/08/28/Java-位-bit-运算/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
 
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+                 热度： 
+                <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+              </span>
+            </span>
+          
+
+          
+
+          
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span title="本文字数">2k</span>
+            </span>
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              
+              <span title="阅读时长">2 分钟</span>
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/07/30/Java-Arrays工具类/" itemprop="url">
-            
-              <span itemprop="name">Java Arrays工具类</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-30T22:50:33+08:00" content="2019-07-30">
-          07-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
+      
+        <h5 id="Java-位-bit-运算"><a href="#Java-位-bit-运算" class="headerlink" title="Java 位(bit)运算"></a>Java 位(bit)运算</h5><p><strong>&amp; 按位与    | 按位或    ^ 按位异或    ~ 按位取反    &lt;&lt; 按位左位移    &gt;&gt;按位右位移    &gt;&gt;&gt; 按位右位移（无符号）</strong></p>
+<p>计算步骤</p>
+<ol>
+<li>将左右两边的值转换成二进制</li>
+<li>竖着按照对应位置进行 &amp; | ^ 计算 （<strong>1 代表true    0 代表false</strong>）</li>
+</ol>
+<pre><code class="line-numbers language-Java">/* 位运算 3 &amp; 5 = ？？？
+   将值转换成二进制
+   3的二进制 00000011
+   5的二进制 00000101
+   --------------------
+               00000001    最终结果为 1 
 
-        
-        
+位运算 3 | 5 = ？？？
+   将值转换成二进制
+   3的二进制 00000011
+   5的二进制 00000101
+   --------------------
+               00000111    最终结果为 7
 
-        
+位运算 3 ^ 5 = ？？？
+   异或两个值不一样就为true
+   将值转换成二进制
+   3的二进制 00000011
+   5的二进制 00000101
+   --------------------
+               00000110    最终结果为 6    */
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/07/29/Java 字符串常用方法/" itemprop="url">
-            
-              <span itemprop="name">Java 字符串常用方法</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-29T00:13:04+08:00" content="2019-07-29">
-          07-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+</code></pre>
+<h6 id="原码、反码、补码"><a href="#原码、反码、补码" class="headerlink" title="原码、反码、补码"></a>原码、反码、补码</h6><ul>
+<li>正数的三个码都是一样的         </li>
+<li>负数二进制的第一位代表符号位，1 为负数   0为正数 </li>
+<li>负数的反码保持符号位不动，其余取反</li>
+<li>负数的补码在反码的基础上加1</li>
+<li><strong>计算机中不管是正数还是负数，都是以补码的形式进行存储的</strong></li>
+</ul>
+<p>​                                    10                                                                         -10</p>
+<p>原码 00000000 00000000 00000000 00001010    原码 10000000 00000000 00000000 00001010</p>
+<p>反码 00000000 00000000 00000000 00001010    反码 11111111 11111111 11111111 00000101</p>
+<p>补码 00000000 00000000 00000000 00001010    补码 11111111 11111111 11111111 00000110</p>
+<h6 id="左位移-lt-lt"><a href="#左位移-lt-lt" class="headerlink" title="左位移 &lt;&lt;"></a>左位移 &lt;&lt;</h6><pre><code class="line-numbers language-java">10 &lt;&lt; 1 = ??    // 左位移 1 位
+     00000000 00000000 00000000 00001010    // 10的二进制
+     0000000 00000000 00000000 000010100    // 左位移1位，结尾处补上一个0     结果为：20
+10 &lt;&lt; 2 = ??    // 左位移 2 位
+     00000000 00000000 00000000 00001010    // 10的二进制
+     000000 00000000 00000000 0000101000    // 左位移1位，结尾处补上两个0     结果为：40
+     // 总结：往左位移相当于乘以2的位移次幂</code></pre>
+<h6 id="右位移-gt-gt"><a href="#右位移-gt-gt" class="headerlink" title="右位移 &gt;&gt;"></a>右位移 &gt;&gt;</h6><pre><code class="line-numbers language-java">10 &gt;&gt; 1 = ??    // 右位移 1 位
+     00000000 00000000 00000000 00001010    // 10的二进制
+     000000000 00000000 00000000 0000101    // 右位移1位，头部添加一个0 结尾处删除一个0     结果为：5
+     // 总结 相当除于2的位移次幂</code></pre>
+<h6 id="无符号右位移-gt-gt-gt"><a href="#无符号右位移-gt-gt-gt" class="headerlink" title="无符号右位移 &gt;&gt;&gt;"></a>无符号右位移 &gt;&gt;&gt;</h6><pre><code class="line-numbers language-java">-10 &gt;&gt;&gt; 1 = ??
+    11111111 11111111 11111111 00000110
+    011111111 11111111 11111111 0000011        // &gt;&gt;&gt;不保留符号位，填0就完事了   &gt;&gt;保留符号位，其余填1</code></pre>
+<h5 id="amp-和-amp-amp-的区别"><a href="#amp-和-amp-amp-的区别" class="headerlink" title="&amp; 和 &amp;&amp; 的区别"></a>&amp; 和 &amp;&amp; 的区别</h5><ul>
+<li>&amp; 可以视为逻辑运算，也可以视为位运算，&amp;&amp; 只能当做逻辑运算来用</li>
+<li>如果两个符号都是逻辑运算符，那么 &amp; 两边都是true时，结果为true，反之为false</li>
+<li>&amp;&amp; 短路与，正常情况下与 &amp; 结果一致，只有当前面为false时，才会发生短路，整体结果为false</li>
+</ul>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/07/28/利用Gulp压缩Hexo博客/" itemprop="url">
-            
-              <span itemprop="name">利用Gulp压缩Hexo博客</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-28T16:27:22+08:00" content="2019-07-28">
-          07-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/07/27/Java-字符串概述及比较/" itemprop="url">
-            
-              <span itemprop="name">Java 字符串概述及比较</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-27T18:02:17+08:00" content="2019-07-27">
-          07-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/07/23/Java Random随机数/" itemprop="url">
-            
-              <span itemprop="name">Java Random随机数</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-23T21:25:33+08:00" content="2019-07-23">
-          07-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/07/23/Java-ArrayList集合/" itemprop="url">
-            
-              <span itemprop="name">Java ArrayList集合</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-23T21:25:33+08:00" content="2019-07-23">
-          07-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/07/23/Java 匿名对象概述/" itemprop="url">
-            
-              <span itemprop="name">Java 匿名对象概述</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-23T16:25:17+08:00" content="2019-07-23">
-          07-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/07/22/Java 自增自减概述/" itemprop="url">
-            
-              <span itemprop="name">Java 自增自减概述</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-22T15:27:17+08:00" content="2019-07-22">
-          07-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/07/21/Java for循环奇偶数练习/" itemprop="url">
-            
-              <span itemprop="name">Java for循环奇偶数练习</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-21T15:01:18+08:00" content="2019-07-21">
-          07-21
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+
+    
+
+    
+      
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    赞赏支持
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.png" alt="村长ABC 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.png" alt="村长ABC 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>村长ABC</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="https://blon.club/2019/08/28/Java-位-bit-运算/" title="Java 位(bit)运算">https://blon.club/2019/08/28/Java-位-bit-运算/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <div>
+      
+      <div>
+    
+        <div style="text-align:center;color: #3c3c3c;font-size:15px;">-------------本文结束感谢您的阅读-------------</div>
+    
+</div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag"><i class="fa fa-tag"></i> java</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/08/14/Java-继承/" rel="next" title="Java 继承">
+                <i class="fa fa-chevron-left"></i> Java 继承
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/2019/07/page/2/">2</a><a class="extend next" rel="next" href="/archives/2019/07/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
+  </article>
 
 
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+
+  
+
+
 
         </div>
         
@@ -789,8 +742,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -920,6 +882,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#Java-位-bit-运算"><span class="nav-number">1.</span> <span class="nav-text">Java 位(bit)运算</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#原码、反码、补码"><span class="nav-number">1.1.</span> <span class="nav-text">原码、反码、补码</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#左位移-lt-lt"><span class="nav-number">1.2.</span> <span class="nav-text">左位移 &lt;&lt;</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#右位移-gt-gt"><span class="nav-number">1.3.</span> <span class="nav-text">右位移 &gt;&gt;</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#无符号右位移-gt-gt-gt"><span class="nav-number">1.4.</span> <span class="nav-text">无符号右位移 &gt;&gt;&gt;</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#amp-和-amp-amp-的区别"><span class="nav-number">2.</span> <span class="nav-text">&amp; 和 &amp;&amp; 的区别</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -1141,6 +1120,10 @@ show_date_time();
 
 
   
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
 
   <script src="/js/next-boot.js?v=7.2.0"></script>
 
@@ -1180,6 +1163,8 @@ show_date_time();
 
 
 
+
+  
 
 
   
