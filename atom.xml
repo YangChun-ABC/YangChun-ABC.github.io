@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blon.club/"/>
-  <updated>2019-09-03T14:56:20.719Z</updated>
+  <updated>2019-09-14T00:47:54.089Z</updated>
   <id>https://blon.club/</id>
   
   <author>
@@ -17,20 +17,158 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Java 经典案例</title>
-    <link href="https://blon.club/2019/09/03/Java-%E7%BB%8F%E5%85%B8%E6%A1%88%E4%BE%8B/"/>
-    <id>https://blon.club/2019/09/03/Java-经典案例/</id>
-    <published>2019-09-03T14:55:15.000Z</published>
-    <updated>2019-09-03T14:56:20.719Z</updated>
+    <title>Java 二维数组实现登入系统</title>
+    <link href="https://blon.club/2019/09/14/Java-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0%E7%99%BB%E5%85%A5%E7%B3%BB%E7%BB%9F/"/>
+    <id>https://blon.club/2019/09/14/Java-二维数组实现登入系统/</id>
+    <published>2019-09-14T00:46:41.000Z</published>
+    <updated>2019-09-14T00:47:54.089Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="Java-二维数组实现登入系统"><a href="#Java-二维数组实现登入系统" class="headerlink" title="Java 二维数组实现登入系统"></a>Java 二维数组实现登入系统</h5><p>思路分析</p><p>​ 二维数组充当数据库</p><p>​ 用户输入存放在一维数组</p><p>​ 用户输入的值与数据库里的值进行比较</p><pre><code class="line-numbers language-java">import java.util.Scanner;public class main {    public static void main(String[] args) {        String[][] data = {{"小红","123"},{"小王","456"},{"小明","789"}}; // 数据库        Scanner sca = new Scanner(System.in);        while (true) {            System.out.println(&quot;请输入用户名称&quot;);            String userName = sca.nextLine();            System.out.println(&quot;请输入密码&quot;);            String password = sca.nextLine();            String[] userBox = {userName, password};            if (Login(data, userBox)) {                System.out.println(&quot;登录成功&quot;);                break;            } else {                System.out.println(&quot;用户名或密码错误&quot;);            }        }    }    public static boolean Login (String[][] data , String[] userBox){        for (int i = 0; i &lt; data.length; i++) {            if (data[i][0].equals(userBox[0]) &amp;&amp; data[i][1].equals(userBox[1])){                return true;            }        }        return false;    }}</code></pre>]]></content>
     
     <summary type="html">
     
+      
+      
+        &lt;h5 id=&quot;Java-二维数组实现登入系统&quot;&gt;&lt;a href=&quot;#Java-二维数组实现登入系统&quot; class=&quot;headerlink&quot; title=&quot;Java 二维数组实现登入系统&quot;&gt;&lt;/a&gt;Java 二维数组实现登入系统&lt;/h5&gt;&lt;p&gt;思路分析&lt;/p&gt;
+&lt;p&gt;​ 二维数组
+      
+    
     </summary>
     
-      <category term="java" scheme="https://blon.club/categories/java/"/>
+      <category term="java小练习" scheme="https://blon.club/categories/java%E5%B0%8F%E7%BB%83%E4%B9%A0/"/>
     
     
-      <category term="java" scheme="https://blon.club/tags/java/"/>
+      <category term="java小练习" scheme="https://blon.club/tags/java%E5%B0%8F%E7%BB%83%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 简易计算器</title>
+    <link href="https://blon.club/2019/09/14/Java-%E7%AE%80%E6%98%93%E8%AE%A1%E7%AE%97%E5%99%A8/"/>
+    <id>https://blon.club/2019/09/14/Java-简易计算器/</id>
+    <published>2019-09-14T00:43:23.000Z</published>
+    <updated>2019-09-14T00:45:18.712Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="Java-简易计算器"><a href="#Java-简易计算器" class="headerlink" title="Java 简易计算器"></a>Java 简易计算器</h5><p>题目要求：输入数字1，输入符号，输入数字2，计算结果，保留结果，下次计算</p><pre><code class="line-numbers language-java">public class Calculator {    double num = 0;     // 用来装计算结果    public double count(double a, String symbol, double b) {    // (数值1 ，符号 ， 数值2)        switch (symbol) {            case &quot;+&quot;: num = a + b; break;            case &quot;-&quot;: num = a - b; break;            case &quot;*&quot;: num = a * b; break;            case &quot;/&quot;: num = a / b; break;        }        return num;     // 返回计算结果    }}</code></pre><h5 id="创建Calculator对象"><a href="#创建Calculator对象" class="headerlink" title="创建Calculator对象"></a>创建Calculator对象</h5><pre><code class="line-numbers language-java">import java.util.Scanner;public class Main {    public static void main(String[] args) {        Calculator calculator = new Calculator();        Scanner sca = new Scanner(System.in);        System.out.println(&quot;请输入第一个数字&quot;);        int i = sca.nextInt();        boolean b = true;   // 添加标记        double count = 0;        while (true) {            System.out.println(&quot;请输入符号&quot;);            String next = sca.next();            if (next.equals(&quot;=&quot;)) {                System.out.println(&quot;程序结束&quot;);                break;            }            if (!(next.equals(&quot;+&quot;) || next.equals(&quot;-&quot;) || next.equals(&quot;*&quot;) || next.equals(&quot;/&quot;))) {                System.out.println(&quot;你输入的符号不正确，仅支持 + - * / =&quot;);                continue;            }            System.out.println(&quot;请输入第二个数字&quot;);            int j = sca.nextInt();            /* 如果标记为True 则执行代码块1，调用方法将返回值交给count 变量 反之则执行代码块2，将count替代             * 参数i */            if (b) {                count = calculator.count(i, next, j);                System.out.println(count);            } else {                count = calculator.count(count, next, j);                System.out.println(count);            }            b = false;    // 第一次循环后改变标记        }    }}</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;Java-简易计算器&quot;&gt;&lt;a href=&quot;#Java-简易计算器&quot; class=&quot;headerlink&quot; title=&quot;Java 简易计算器&quot;&gt;&lt;/a&gt;Java 简易计算器&lt;/h5&gt;&lt;p&gt;题目要求：输入数字1，输入符号，输入数字2，计算结果，保留结果，下次计算&lt;/
+      
+    
+    </summary>
+    
+      <category term="java小练习" scheme="https://blon.club/categories/java%E5%B0%8F%E7%BB%83%E4%B9%A0/"/>
+    
+    
+      <category term="java小练习" scheme="https://blon.club/tags/java%E5%B0%8F%E7%BB%83%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 冒泡排序</title>
+    <link href="https://blon.club/2019/09/14/Java-%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/"/>
+    <id>https://blon.club/2019/09/14/Java-冒泡排序/</id>
+    <published>2019-09-14T00:39:17.000Z</published>
+    <updated>2019-09-14T00:45:25.633Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="Java-冒泡排序"><a href="#Java-冒泡排序" class="headerlink" title="Java 冒泡排序"></a>Java 冒泡排序</h5><p>冒泡排序是一种简单的排序算法，原理是比较相邻的两个元素，如果第一个比第二个大则交换他们。</p><p>思路：</p><ol><li>比较两个元素，如果第一个比第二个大则交换他们</li><li>对每一对相邻的元素做同样的操作，最后的元素将会最大值</li><li>对所有元素重复以上操作，除了最后一个</li></ol><pre><code class="line-numbers language-java">public static void bubbleSort(int[] arr) {        for (int i = arr.length; i &gt; 0; i--) {      //外层循环移动游标            for (int j = 0; j &lt; i &amp;&amp; (j + 1) &lt; i; j++) {    //内层循环遍历游标及之后(或之前)的元素                if (arr[j] &gt; arr[j + 1]) {                    int temp = arr[j];                    arr[j] = arr[j + 1];                    arr[j + 1] = temp;                    System.out.println(&quot;Sorting: &quot; + Arrays.toString(arr));                }            }        }    }</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;Java-冒泡排序&quot;&gt;&lt;a href=&quot;#Java-冒泡排序&quot; class=&quot;headerlink&quot; title=&quot;Java 冒泡排序&quot;&gt;&lt;/a&gt;Java 冒泡排序&lt;/h5&gt;&lt;p&gt;冒泡排序是一种简单的排序算法，原理是比较相邻的两个元素，如果第一个比第二个大则交换他
+      
+    
+    </summary>
+    
+      <category term="java小练习" scheme="https://blon.club/categories/java%E5%B0%8F%E7%BB%83%E4%B9%A0/"/>
+    
+    
+      <category term="java小练习" scheme="https://blon.club/tags/java%E5%B0%8F%E7%BB%83%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>水仙花案例</title>
+    <link href="https://blon.club/2019/09/14/%E6%B0%B4%E4%BB%99%E8%8A%B1%E6%A1%88%E4%BE%8B/"/>
+    <id>https://blon.club/2019/09/14/水仙花案例/</id>
+    <published>2019-09-14T00:36:18.000Z</published>
+    <updated>2019-09-14T00:38:21.068Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="水仙花案例"><a href="#水仙花案例" class="headerlink" title="水仙花案例"></a>水仙花案例</h5><p>例题：求出3位数的水仙花数（100~999）之间，水仙花数，是指一个三位数的，每个位的3次幂之和（也叫立方和）等于它本身。</p><p><strong>代码实例</strong></p><pre><code class="line-numbers language-java">public class Demo {    public static void main(String[] args) {        for (int i = 100; i &lt;= 999; i++) {            // 首先求出这个数的百位、十位、个位            int b = i / 100;   // 百位            int s = i % 100 / 10;    // 十位            int g = i % 10;     // 个位            if (Math.pow(b, 3) + Math.pow(s, 3) + Math.pow(g, 3) == i) {    // Math.pow计算参数次幂                //int num = (int)(Math.pow(b ,3)+Math.pow(s ,3)+Math.pow(g ,3));                System.out.println(i + &quot;\t是水仙花数&quot;);            }        }    }}</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;水仙花案例&quot;&gt;&lt;a href=&quot;#水仙花案例&quot; class=&quot;headerlink&quot; title=&quot;水仙花案例&quot;&gt;&lt;/a&gt;水仙花案例&lt;/h5&gt;&lt;p&gt;例题：求出3位数的水仙花数（100~999）之间，水仙花数，是指一个三位数的，每个位的3次幂之和（也叫立方和）等于它
+      
+    
+    </summary>
+    
+      <category term="java小练习" scheme="https://blon.club/categories/java%E5%B0%8F%E7%BB%83%E4%B9%A0/"/>
+    
+    
+      <category term="java小练习" scheme="https://blon.club/tags/java%E5%B0%8F%E7%BB%83%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 鸡兔同笼案例</title>
+    <link href="https://blon.club/2019/09/14/Java-%E9%B8%A1%E5%85%94%E5%90%8C%E7%AC%BC%E6%A1%88%E4%BE%8B/"/>
+    <id>https://blon.club/2019/09/14/Java-鸡兔同笼案例/</id>
+    <published>2019-09-14T00:33:18.000Z</published>
+    <updated>2019-09-14T00:35:41.248Z</updated>
+    
+    <content type="html"><![CDATA[<p>Java “鸡兔同笼”案例</p><p>例题：假设鸡和兔子的总数是50只，脚有160只，求出鸡跟兔子的数量</p><p>要求：在已知头数和脚数的情况下用for循环的方式求出鸡跟兔子的数量</p><p>首先，我们先用数学的方式计算</p><ul><li><p><strong>方法一“假设法”</strong></p><p>假设笼子里的全部都是鸡，那么50只鸡，每只鸡有两只脚，就有50*2=100只脚，但题目脚的总数是160只，比100多了160-100=60只。当然笼子里不止有鸡还有兔子，所以我们每往笼子里加一只兔子就减少一只鸡，笼子里的脚就会增加4-2=2只，要让笼子里的鸡增加到60只，那么需要增加兔子60/2=30只，也就是说，兔子的数量是30只，这是我们将总数50减去兔子的数量30得到鸡的数量20只。</p></li><li><p><strong>方法二“方程式”</strong></p><p>假设鸡的数量为 x ，兔子的数量为26-x，鸡有两只脚，兔子有4只脚，脚的总数为160，得出一元一次方程</p><p>$$<br>2x + 4(50-x) = 160<br>$$</p><p>计算的出 x = 20 ，则兔子的数量50-20=30只</p></li></ul><p><strong>代码实例</strong></p><pre><code class="line-numbers language-java">import java.util.Scanner;public class Main {    public static void main(String[] args) {        Scanner sca = new Scanner(System.in);        System.out.println(&quot;请输入鸡兔总数&quot;);        int i = sca.nextInt();        System.out.println(&quot;请输入脚的总数&quot;);        int j = sca.nextInt();        // 第一种方法 假设法        int rabbit = (j - i * 2) / 2;        int chicken = i - rabbit;        System.out.println(&quot;鸡的数量&quot; + chicken + &quot;\t&quot; + &quot;兔子的数量&quot; + rabbit);        System.out.println(&quot;==============================&quot;);        // 调用方法        method(i, j);    }    // 第二种方法，使用for循环    private static void method(int i, int j) {        // 使用for循环        for (int k = 1; k &lt;= i; k++) {            // i = 鸡兔总数            // k = 当前变量            // j = 脚的数量            if (k * 2 + (i - k) * 4 == j) {                System.out.println(&quot;鸡的数量&quot; + k + &quot;\t&quot; + &quot;兔子的数量&quot; + (i - k));                break;            }        }    }}</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Java “鸡兔同笼”案例&lt;/p&gt;
+&lt;p&gt;例题：假设鸡和兔子的总数是50只，脚有160只，求出鸡跟兔子的数量&lt;/p&gt;
+&lt;p&gt;要求：在已知头数和脚数的情况下用for循环的方式求出鸡跟兔子的数量&lt;/p&gt;
+&lt;p&gt;首先，我们先用数学的方式计算&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;st
+      
+    
+    </summary>
+    
+      <category term="java小练习" scheme="https://blon.club/categories/java%E5%B0%8F%E7%BB%83%E4%B9%A0/"/>
+    
+    
+      <category term="java小练习" scheme="https://blon.club/tags/java%E5%B0%8F%E7%BB%83%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>打印2～100之间的素数</title>
+    <link href="https://blon.club/2019/09/14/%E6%89%93%E5%8D%B02%EF%BD%9E100%E4%B9%8B%E9%97%B4%E7%9A%84%E7%B4%A0%E6%95%B0/"/>
+    <id>https://blon.club/2019/09/14/打印2～100之间的素数/</id>
+    <published>2019-09-14T00:29:46.000Z</published>
+    <updated>2019-09-14T00:32:06.050Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="打印2～100之间的素数"><a href="#打印2～100之间的素数" class="headerlink" title="打印2～100之间的素数"></a>打印2～100之间的素数</h5><p>素数（又称质数）有无限个，素数的定义：除了1和他自身外，不能被其他自然数整除的数叫做素数，否则称为合数，</p><p>输出打印 2 ~ 100之间的素数</p><pre><code class="line-numbers language-java">import java.util.ArrayList;public class Main {    public static void main(String[] args) {        for (int i = 2; i &lt;= 100; i++) {            if (isPrime(i)){                System.out.print(&quot; &quot; + i);            }        }    }    // 判断是否为素数的方法    public static boolean isPrime (int num) {        for (int i = 2 ; i &lt;= Math.sqrt(num);i++) {            if (num % i == 0){                return false;            }        }        return true;    }}</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;打印2～100之间的素数&quot;&gt;&lt;a href=&quot;#打印2～100之间的素数&quot; class=&quot;headerlink&quot; title=&quot;打印2～100之间的素数&quot;&gt;&lt;/a&gt;打印2～100之间的素数&lt;/h5&gt;&lt;p&gt;素数（又称质数）有无限个，素数的定义：除了1和他自身外，不能
+      
+    
+    </summary>
+    
+      <category term="java小练习" scheme="https://blon.club/categories/java%E5%B0%8F%E7%BB%83%E4%B9%A0/"/>
+    
+    
+      <category term="java小练习" scheme="https://blon.club/tags/java%E5%B0%8F%E7%BB%83%E4%B9%A0/"/>
     
   </entry>
   
@@ -64,16 +202,15 @@
     <link href="https://blon.club/2019/08/14/Java-%E7%BB%A7%E6%89%BF/"/>
     <id>https://blon.club/2019/08/14/Java-继承/</id>
     <published>2019-08-14T15:59:16.000Z</published>
-    <updated>2019-08-14T16:03:07.366Z</updated>
+    <updated>2019-09-10T16:09:35.017Z</updated>
     
-    <content type="html"><![CDATA[<h5 id="继承中成员变量访问特点"><a href="#继承中成员变量访问特点" class="headerlink" title="继承中成员变量访问特点"></a>继承中成员变量访问特点</h5><p>创建父类</p><pre><code class="line-numbers language-java">public class fu{...}</code></pre><p>创建子类</p><pre><code class="line-numbers language-java">public　class zi extends fu{...}</code></pre><p>在父子继承关系中，如果成员变量重名，那么创建子类对象是有两种访问方法</p><ul><li><p>直接访问 通过子类对象访问成员变量</p><p>规则：就近原则，等号左边是谁就优先用谁 没有则向上找</p><pre><code class="line-numbers language-java">zi z = new zi();//等号左边是子类，则用子类的成员变量 i        System.out.println(z.i);</code></pre></li><li><p>间接访问 通过成员方法访问成员变量</p><p>规则：该方法属于谁就优先用谁</p></li></ul><p><strong>三种变量重名</strong></p><table><thead><tr><th>局部变量</th><th>直接写成变量名</th></tr></thead><tbody><tr><td><strong>本类的成员变量</strong></td><td><strong>this.成员变量名</strong></td></tr><tr><td><strong>父类的成员变量</strong></td><td><strong>super.成员变量名</strong></td></tr></tbody></table><h5 id="继承中成员方法访问特点"><a href="#继承中成员方法访问特点" class="headerlink" title="继承中成员方法访问特点"></a>继承中成员方法访问特点</h5><ul><li><p>在父子类继承关系中，创建子类对象，访问成员方法的规则</p><p>规则：创建的对象是谁，就优先用谁，没有则向上找 ，也就是说等号右边new了谁那就用谁</p></li></ul><p><strong>注意事项：无论是成员方法还是成员变量，如果没有都是向上找父类，绝对不会向下找子类</strong></p><h5 id="方法覆盖重写注意事项"><a href="#方法覆盖重写注意事项" class="headerlink" title="方法覆盖重写注意事项"></a>方法覆盖重写注意事项</h5><ul><li>必须保证父子类之间方法名称相同，参数列表也相同。<code>@Override</code>写在方法前面，这个注解用来检测是否正确的方法覆盖重写</li><li>子类方法的返回值必须<strong>小于等于</strong>父类方法返回值的范围</li><li>子类方法的权限必须<strong>大于等于</strong>父类的权限修饰符</li></ul><h5 id="继承中构造方法的访问特点"><a href="#继承中构造方法的访问特点" class="headerlink" title="继承中构造方法的访问特点"></a>继承中构造方法的访问特点</h5><ul><li>子类构造方法中有一个默认隐含的<code>super()</code>调用，所以一定是先调用父类构造后执行子类构造</li><li>子类构造通过super关键字来调用父类重载构造</li><li>super的父类构造必须使用，必须是子类构造方法的第一个语句，不能一个子类构造调用多次super构造</li></ul><p><strong>总结</strong>：子类必须调用父类构造方法，不写则赠送super()；写了则使用指定的super 调用，super只能有一个，还必须是第一个</p><pre><code class="line-numbers language-java">//创建父类public class Fu {    public Fu() { //父类无参构造        System.out.println(&quot;父类构造&quot;);    }}</code></pre><pre><code class="line-numbers language-java">//创建子类public class zi extends Fu {    public zi() {        System.out.println(&quot;子类构造&quot;);    }}</code></pre><pre><code class="line-numbers language-java">public class Main {    public static void main(String[] args) {        zi z = new zi();    }}</code></pre><p>super的三种使用方法</p><ol start="2"><li><p>子类成员方法中访问父类的成员变量</p><pre><code class="line-numbers language-java">super.成员变量名;</code></pre></li><li><p>子类成员方法方法访问父类成员方法</p><pre><code class="line-numbers language-java">super.父类成员方法名;</code></pre></li><li><p>子类构造方法访问父类构造方法</p><pre><code class="line-numbers language-java">public zi(){    super();     //不写也可以，默认赠送}</code></pre></li></ol><p><strong>代码实例</strong></p><pre><code class="line-numbers language-java">//创建父类public class Fu {    int i = 10;    public void method(){        System.out.println(&quot;父类方法&quot;);    }}</code></pre><pre><code class="line-numbers language-java">//创建子类public class zi extends Fu{    int i = 20;}public void Main(){    int i = 30;    System.out.println(i);    //局部变量    System.out.printrn(this.i); //本类成员变量    System.out.println(super.i);//父类成员变量} public void method(){         super.method(); //访问父类的成员方法        System.out.println(&quot;父类方法&quot;);    }</code></pre>]]></content>
+    <content type="html"><![CDATA[<h5 id="Java继承"><a href="#Java继承" class="headerlink" title="Java继承"></a>Java继承</h5><p>在《Think in java》中有这样一句话：复用代码是Java众多引人注目的功能之一。但要想成为极具革命性的语言，仅仅能够复制代码并对加以改变是不够的，它还必须能够做更多的事情。在这句话中最引人注目的是“复用代码”,尽可能的复用代码使我们程序员一直在追求的，现在我来介绍一种复用代码的方式，也是java三大特性之一—继承。</p><p>继承主要解决的问题是<strong>共性抽取</strong></p><h5 id="继承关系当中的特点"><a href="#继承关系当中的特点" class="headerlink" title="继承关系当中的特点"></a>继承关系当中的特点</h5><ol><li>子类可以拥有父类的内容</li><li>子类还可以拥有自己专有的内容</li></ol><h5 id="父子类定义格式"><a href="#父子类定义格式" class="headerlink" title="父子类定义格式"></a>父子类定义格式</h5><p>定义父类</p><pre><code class="line-numbers language-java">// 定义父类，就是一个普通的类public class 父类名称 {      // ...  }</code></pre><p>定义子类</p><pre><code class="line-numbers language-java">public class 子类名称 extends 父类名称 {    // ...}</code></pre><h5 id="继承中成员变量访问特点"><a href="#继承中成员变量访问特点" class="headerlink" title="继承中成员变量访问特点"></a>继承中成员变量访问特点</h5><p>创建父类</p><pre><code class="line-numbers language-java">public class fu{...}</code></pre><p>创建子类</p><pre><code class="line-numbers language-java">public　class zi extends fu{...}</code></pre><p>在父子继承关系中，如果成员变量重名，那么创建子类对象是有两种访问方法</p><ul><li><p>直接访问 通过子类对象访问成员变量</p><p>规则：就近原则，等号左边是谁就优先用谁 没有则向上找</p><pre><code class="line-numbers language-java">zi z = new zi();//等号左边是子类，则用子类的成员变量 i        System.out.println(z.i);</code></pre></li><li><p>间接访问 通过成员方法访问成员变量</p><p>规则：该方法属于谁就优先用谁</p></li></ul><p><strong>三种变量重名</strong></p><table><thead><tr><th>局部变量</th><th>直接写成变量名</th></tr></thead><tbody><tr><td><strong>本类的成员变量</strong></td><td><strong>this.成员变量名</strong></td></tr><tr><td><strong>父类的成员变量</strong></td><td><strong>super.成员变量名</strong></td></tr></tbody></table><h5 id="继承中成员方法访问特点"><a href="#继承中成员方法访问特点" class="headerlink" title="继承中成员方法访问特点"></a>继承中成员方法访问特点</h5><ul><li><p>在父子类继承关系中，创建子类对象，访问成员方法的规则</p><p>规则：创建的对象是谁，就优先用谁，没有则向上找 ，也就是说等号右边new了谁那就用谁</p></li></ul><p><strong>注意事项：无论是成员方法还是成员变量，如果没有都是向上找父类，绝对不会向下找子类</strong></p><h5 id="方法覆盖重写注意事项"><a href="#方法覆盖重写注意事项" class="headerlink" title="方法覆盖重写注意事项"></a>方法覆盖重写注意事项</h5><ul><li>必须保证父子类之间方法名称相同，参数列表也相同。<code>@Override</code>写在方法前面，这个注解用来检测是否正确的方法覆盖重写</li><li>子类方法的返回值必须<strong>小于等于</strong>父类方法返回值的范围</li><li>子类方法的权限必须<strong>大于等于</strong>父类的权限修饰符</li></ul><h5 id="继承中构造方法的访问特点"><a href="#继承中构造方法的访问特点" class="headerlink" title="继承中构造方法的访问特点"></a>继承中构造方法的访问特点</h5><ul><li>子类构造方法中有一个默认隐含的<code>super()</code>调用，所以一定是先调用父类构造后执行子类构造</li><li>子类构造通过super关键字来调用父类重载构造</li><li>super的父类构造必须使用，必须是子类构造方法的第一个语句，不能一个子类构造调用多次super构造</li></ul><p><strong>总结</strong>：子类必须调用父类构造方法，不写则赠送super()；写了则使用指定的super 调用，super只能有一个，还必须是第一个</p><pre><code class="line-numbers language-java">//创建父类public class Fu {    public Fu() { //父类无参构造        System.out.println(&quot;父类构造&quot;);    }}</code></pre><pre><code class="line-numbers language-java">//创建子类public class zi extends Fu {    public zi() {        System.out.println(&quot;子类构造&quot;);    }}</code></pre><pre><code class="line-numbers language-java">public class Main {    public static void main(String[] args) {        zi z = new zi();    }}</code></pre><p>super的三种使用方法</p><ol start="2"><li><p>子类成员方法中访问父类的成员变量</p><pre><code class="line-numbers language-java">super.成员变量名;</code></pre></li><li><p>子类成员方法方法访问父类成员方法</p><pre><code class="line-numbers language-java">super.父类成员方法名;</code></pre></li><li><p>子类构造方法访问父类构造方法</p><pre><code class="line-numbers language-java">public zi(){    super();     //不写也可以，默认赠送}</code></pre></li></ol><p><strong>代码实例</strong></p><pre><code class="line-numbers language-java">//创建父类public class Fu {    int i = 10;    public void method(){        System.out.println(&quot;父类方法&quot;);    }}</code></pre><pre><code class="line-numbers language-java">//创建子类public class zi extends Fu{    int i = 20;}public void Main(){    int i = 30;    System.out.println(i);    //局部变量    System.out.printrn(this.i); //本类成员变量    System.out.println(super.i);//父类成员变量} public void method(){         super.method(); //访问父类的成员方法        System.out.println(&quot;父类方法&quot;);    }</code></pre>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h5 id=&quot;继承中成员变量访问特点&quot;&gt;&lt;a href=&quot;#继承中成员变量访问特点&quot; class=&quot;headerlink&quot; title=&quot;继承中成员变量访问特点&quot;&gt;&lt;/a&gt;继承中成员变量访问特点&lt;/h5&gt;&lt;p&gt;创建父类&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;line-nu
+        &lt;h5 id=&quot;Java继承&quot;&gt;&lt;a href=&quot;#Java继承&quot; class=&quot;headerlink&quot; title=&quot;Java继承&quot;&gt;&lt;/a&gt;Java继承&lt;/h5&gt;&lt;p&gt;在《Think in java》中有这样一句话：复用代码是Java众多引人注目的功能之一。但要想成为极具革命
       
     
     </summary>

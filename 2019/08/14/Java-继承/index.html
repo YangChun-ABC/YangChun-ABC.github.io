@@ -102,18 +102,18 @@
 <link rel="stylesheet" href="/js/prism/prism.css">
 
 
-  <meta name="description" content="继承中成员变量访问特点创建父类 public class fu{...} 创建子类 public　class zi extends fu{...} 在父子继承关系中，如果成员变量重名，那么创建子类对象是有两种访问方法  直接访问 通过子类对象访问成员变量 规则：就近原则，等号左边是谁就优先用谁 没有则向上找 zi z = new zi();//等号左边是子类，则用子类的成员变量 i">
+  <meta name="description" content="Java继承在《Think in java》中有这样一句话：复用代码是Java众多引人注目的功能之一。但要想成为极具革命性的语言，仅仅能够复制代码并对加以改变是不够的，它还必须能够做更多的事情。在这句话中最引人注目的是“复用代码”,尽可能的复用代码使我们程序员一直在追求的，现在我来介绍一种复用代码的方式，也是java三大特性之一—继承。 继承主要解决的问题是共性抽取 继承关系当中的特点 子类可以拥">
 <meta name="keywords" content="java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java 继承">
 <meta property="og:url" content="https://blon.club/2019/08/14/Java-继承/index.html">
 <meta property="og:site_name" content="村长ABC">
-<meta property="og:description" content="继承中成员变量访问特点创建父类 public class fu{...} 创建子类 public　class zi extends fu{...} 在父子继承关系中，如果成员变量重名，那么创建子类对象是有两种访问方法  直接访问 通过子类对象访问成员变量 规则：就近原则，等号左边是谁就优先用谁 没有则向上找 zi z = new zi();//等号左边是子类，则用子类的成员变量 i">
+<meta property="og:description" content="Java继承在《Think in java》中有这样一句话：复用代码是Java众多引人注目的功能之一。但要想成为极具革命性的语言，仅仅能够复制代码并对加以改变是不够的，它还必须能够做更多的事情。在这句话中最引人注目的是“复用代码”,尽可能的复用代码使我们程序员一直在追求的，现在我来介绍一种复用代码的方式，也是java三大特性之一—继承。 继承主要解决的问题是共性抽取 继承关系当中的特点 子类可以拥">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-14T16:03:07.366Z">
+<meta property="og:updated_time" content="2019-09-10T16:09:35.017Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java 继承">
-<meta name="twitter:description" content="继承中成员变量访问特点创建父类 public class fu{...} 创建子类 public　class zi extends fu{...} 在父子继承关系中，如果成员变量重名，那么创建子类对象是有两种访问方法  直接访问 通过子类对象访问成员变量 规则：就近原则，等号左边是谁就优先用谁 没有则向上找 zi z = new zi();//等号左边是子类，则用子类的成员变量 i">
+<meta name="twitter:description" content="Java继承在《Think in java》中有这样一句话：复用代码是Java众多引人注目的功能之一。但要想成为极具革命性的语言，仅仅能够复制代码并对加以改变是不够的，它还必须能够做更多的事情。在这句话中最引人注目的是“复用代码”,尽可能的复用代码使我们程序员一直在追求的，现在我来介绍一种复用代码的方式，也是java三大特性之一—继承。 继承主要解决的问题是共性抽取 继承关系当中的特点 子类可以拥">
 
 
 
@@ -433,7 +433,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-15 00:03:07" itemprop="dateModified" datetime="2019-08-15T00:03:07+08:00">2019-08-15</time>
+                <time title="修改时间：2019-09-11 00:09:35" itemprop="dateModified" datetime="2019-09-11T00:09:35+08:00">2019-09-11</time>
               </span>
             
           
@@ -496,7 +496,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span title="本文字数">1.7k</span>
+              <span title="本文字数">2k</span>
             </span>
           
 
@@ -527,7 +527,22 @@
       
 
       
-        <h5 id="继承中成员变量访问特点"><a href="#继承中成员变量访问特点" class="headerlink" title="继承中成员变量访问特点"></a>继承中成员变量访问特点</h5><p>创建父类</p>
+        <h5 id="Java继承"><a href="#Java继承" class="headerlink" title="Java继承"></a>Java继承</h5><p>在《Think in java》中有这样一句话：复用代码是Java众多引人注目的功能之一。但要想成为极具革命性的语言，仅仅能够复制代码并对加以改变是不够的，它还必须能够做更多的事情。在这句话中最引人注目的是“复用代码”,尽可能的复用代码使我们程序员一直在追求的，现在我来介绍一种复用代码的方式，也是java三大特性之一—继承。</p>
+<p>继承主要解决的问题是<strong>共性抽取</strong></p>
+<h5 id="继承关系当中的特点"><a href="#继承关系当中的特点" class="headerlink" title="继承关系当中的特点"></a>继承关系当中的特点</h5><ol>
+<li>子类可以拥有父类的内容</li>
+<li>子类还可以拥有自己专有的内容</li>
+</ol>
+<h5 id="父子类定义格式"><a href="#父子类定义格式" class="headerlink" title="父子类定义格式"></a>父子类定义格式</h5><p>定义父类</p>
+<pre><code class="line-numbers language-java">// 定义父类，就是一个普通的类
+public class 父类名称 {
+      // ...
+  }</code></pre>
+<p>定义子类</p>
+<pre><code class="line-numbers language-java">public class 子类名称 extends 父类名称 {
+    // ...
+}</code></pre>
+<h5 id="继承中成员变量访问特点"><a href="#继承中成员变量访问特点" class="headerlink" title="继承中成员变量访问特点"></a>继承中成员变量访问特点</h5><p>创建父类</p>
 <pre><code class="line-numbers language-java">public class fu{...}</code></pre>
 <p>创建子类</p>
 <pre><code class="line-numbers language-java">public　class zi extends fu{...}</code></pre>
@@ -827,7 +842,7 @@ public void Main(){
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-count">23</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -848,7 +863,9 @@ public void Main(){
         
           
         
-        <span class="site-state-item-count">2</span>
+          
+        
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -869,7 +886,9 @@ public void Main(){
         
           
         
-        <span class="site-state-item-count">2</span>
+          
+        
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -950,7 +969,7 @@ public void Main(){
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#继承中成员变量访问特点"><span class="nav-number">1.</span> <span class="nav-text">继承中成员变量访问特点</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#继承中成员方法访问特点"><span class="nav-number">2.</span> <span class="nav-text">继承中成员方法访问特点</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#方法覆盖重写注意事项"><span class="nav-number">3.</span> <span class="nav-text">方法覆盖重写注意事项</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#继承中构造方法的访问特点"><span class="nav-number">4.</span> <span class="nav-text">继承中构造方法的访问特点</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#Java继承"><span class="nav-number">1.</span> <span class="nav-text">Java继承</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#继承关系当中的特点"><span class="nav-number">2.</span> <span class="nav-text">继承关系当中的特点</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#父子类定义格式"><span class="nav-number">3.</span> <span class="nav-text">父子类定义格式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#继承中成员变量访问特点"><span class="nav-number">4.</span> <span class="nav-text">继承中成员变量访问特点</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#继承中成员方法访问特点"><span class="nav-number">5.</span> <span class="nav-text">继承中成员方法访问特点</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#方法覆盖重写注意事项"><span class="nav-number">6.</span> <span class="nav-text">方法覆盖重写注意事项</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#继承中构造方法的访问特点"><span class="nav-number">7.</span> <span class="nav-text">继承中构造方法的访问特点</span></a></li></ol></div>
             
 
           </div>
@@ -994,7 +1013,7 @@ public void Main(){
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">25k</span>
+    <span title="站点总字数">31k</span>
   
 
   
@@ -1005,7 +1024,7 @@ public void Main(){
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">22 分钟</span>
+    <span title="站点阅读时长">28 分钟</span>
   
 </div>
 
