@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Java 配置环境变量]]></title>
+    <url>%2F2019%2F09%2F20%2FJava-%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%2F</url>
+    <content type="text"><![CDATA[Java配置环境变量 前言：前段时间家里停电，然后就跑去网吧，配置环境变量时发现不知道怎么弄了，看样子估计又忘的差不多了😂😂😂 以win10 为例 ，安装JDK啥的就不说了，主要注意不要安装在C盘，安装路径不要有空格及只中文。 使用左下角的搜索 搜索“环境变量”，在系统变量栏中新建系统变量 变量参数设置如下 变量名：JAVA_HOME 变量值：E:\Java\jdk-11.0.2 // 这里根据自己的实际路径配置 Path设置 注意：在 Windows10 中，Path 变量里是分条显示的，我们需要将 %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin; 分开添加，否则无法识别： 找到变量名Path，双击打开它，然后新建 变量值：%JAVA_HOME%\bin 变量值：%JAVA_HOME%\jre\bin .最后打开cmd 输入java -version、java、javac出现以下信息，说明环境变量配置成功；]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Java 二维数组实现登入系统]]></title>
     <url>%2F2019%2F09%2F14%2FJava-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E5%AE%9E%E7%8E%B0%E7%99%BB%E5%85%A5%E7%B3%BB%E7%BB%9F%2F</url>
     <content type="text"><![CDATA[Java 二维数组实现登入系统思路分析 ​ 二维数组充当数据库 ​ 用户输入存放在一维数组 ​ 用户输入的值与数据库里的值进行比较 import java.util.Scanner; public class main { public static void main(String[] args) { String[][] data = {{"小红","123"},{"小王","456"},{"小明","789"}}; // 数据库 Scanner sca = new Scanner(System.in); while (true) { System.out.println(&quot;请输入用户名称&quot;); String userName = sca.nextLine(); System.out.println(&quot;请输入密码&quot;); String password = sca.nextLine(); String[] userBox = {userName, password}; if (Login(data, userBox)) { System.out.println(&quot;登录成功&quot;); break; } else { System.out.println(&quot;用户名或密码错误&quot;); } } } public static boolean Login (String[][] data , String[] userBox){ for (int i = 0; i &lt; data.length; i++) { if (data[i][0].equals(userBox[0]) &amp;&amp; data[i][1].equals(userBox[1])){ return true; } } return false; } }]]></content>
