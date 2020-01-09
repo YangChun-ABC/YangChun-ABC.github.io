@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blon.club/"/>
-  <updated>2020-01-09T05:03:58.141Z</updated>
+  <updated>2019-09-19T16:31:37.086Z</updated>
   <id>https://blon.club/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test</title>
-    <link href="https://blon.club/2020/01/09/test/"/>
-    <id>https://blon.club/2020/01/09/test/</id>
-    <published>2020-01-09T05:01:37.000Z</published>
-    <updated>2020-01-09T05:03:58.141Z</updated>
-    
-    <content type="html"><![CDATA[<pre><code class="line-numbers language-java">public class Main{  public static void method(String[] args){    System.out.println(&quot;hello&quot;)  }}</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;pre&gt;&lt;code class=&quot;line-numbers language-java&quot;&gt;public class Main{
-  public static void method(String[] args){
-    System.out.println(&amp;quot;he
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>Java 配置环境变量</title>
