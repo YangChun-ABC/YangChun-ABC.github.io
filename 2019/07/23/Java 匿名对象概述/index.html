@@ -737,7 +737,7 @@ new Person().Main //   我叫null 输出结果不会是“我叫村长”，原�
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-count">25</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -877,7 +877,15 @@ new Person().Main //   我叫null 输出结果不会是“我叫村长”，原�
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">
+<div class="BbeiAn-info">
+    赣ICP备 -
+    <a target="_blank" href="http://www.beian.miit.gov.cn/" style="color:#f0d784" rel="nofollow">赣ICP备19013366号</a> <!--a标签中增加nofollow属性，避免爬虫出站。| -->
+  <!--<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=赣ICP备19013366号" style="color:#f0d784;text-decoration:none;padding-left:30px;background:url(https://s1.ax1x.com/2018/09/29/ilmwIH.png) no-repeat left center" rel="nofollow">赣公网安备 你自己的备案号</a> -->   <!--这里将图标作为了背景，以使得能和后面的文字在同一行-->
+</div>
+&copy; 
+
+<span itemprop="copyrightYear">2020</span>
   <span class="with-love" id="animate">
     <i class="fa fa-heart"></i>
   </span>
@@ -914,6 +922,8 @@ new Person().Main //   我叫null 输出结果不会是“我叫村长”，原�
 
 
 
+
+
 <div id="days"></div>
 <script>
 function show_date_time(){
@@ -931,7 +941,7 @@ function show_date_time(){
     e_minsold=(e_hrsold-hrsold)*60;
     minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
     seconds=setzero(Math.floor((e_minsold-minsold)*60));
-    document.getElementById('days').innerHTML="村长ABC已经陪伴您"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+    document.getElementById('days').innerHTML="本网站勉强运行了"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
 }
 function setzero(i){
     if (i<10)
@@ -940,7 +950,7 @@ function setzero(i){
 }
 show_date_time();
 </script>
-<script src="/js/prism/prism.js" async></script>
+<!--<script src="/js/prism/prism.js" async></script>-->
 
 
         
@@ -951,7 +961,7 @@ show_date_time();
     <span class="site-pv">
       <i class="fa fa-eye"></i>
     </span>
-      历经 <span class="busuanzi-value" id="busuanzi_value_site_pv"></span> 次回眸
+       <span class="busuanzi-value" id="busuanzi_value_site_pv"></span> 
 
       <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
     
@@ -965,7 +975,7 @@ show_date_time();
     <span class="site-uv">
       <i class="fa fa-user"></i>
     </span>
-      才换来与你的第 <span class="busuanzi-value" id="busuanzi_value_site_uv"></span> 次相遇
+       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span> 
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
     
   
@@ -1478,9 +1488,9 @@ show_date_time();
 
 
   <!-- 页面点击小红心 -->
-<script type="text/javascript" src="/js/src/clicklove.js"></script>
+<!--<script type="text/javascript" src="/js/src/clicklove.js"></script>-->
 <!-- 页面点击爱国明主特效 -->
-<!--<script type="text/javascript" src="/js/src/click.js"></script> -->
+<script type="text/javascript" src="/js/src/click.js"></script> -->
 
 </body>
 </html>
